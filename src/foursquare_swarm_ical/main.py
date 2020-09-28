@@ -1,10 +1,10 @@
 from contextlib import contextmanager
 from datetime import datetime
-from foursquare import Foursquare
+from foursquare import Foursquare  # type: ignore [import]
 from sys import stderr, stdout
 from typing import Iterator, Any
 import argparse
-import icalendar
+import icalendar  # type: ignore [import]
 import json
 import os
 import pytz
