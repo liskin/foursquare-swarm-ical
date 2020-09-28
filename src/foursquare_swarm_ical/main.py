@@ -87,6 +87,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    if not args.access_token:
+        raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
+
     with database(args.database) as db:
         sync(db=db, access_token=args.access_token, verbose=args.verbose)
         stdout.buffer.write(ical(db=db))
