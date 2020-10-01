@@ -1,14 +1,17 @@
+import argparse
 from contextlib import contextmanager
 from datetime import datetime
-from foursquare import Foursquare  # type: ignore [import]
-from sys import stderr, stdout
-from typing import Iterator, Any
-import argparse
-import icalendar  # type: ignore [import]
 import json
 import os
-import pytz
 import sqlite3
+from sys import stderr
+from sys import stdout
+from typing import Any
+from typing import Iterator
+
+from foursquare import Foursquare  # type: ignore [import]
+import icalendar  # type: ignore [import]
+import pytz
 
 
 @contextmanager
