@@ -62,13 +62,19 @@ def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
 
         prefix = emojis.get_emoji_for_venue(checkin['venue']) if emojis else "@"
 
+        location = checkin['venue']['location']
+        address = ', '.join(location.get('formattedAddress', []))
+        if not address:
+            address = str(location['lat']) + "," + str(location['lng'])
+
         ev = icalendar.Event()
         ev.add('uid', checkin['id'] + "@foursquare.com")
         ev.add('url', "https://www.swarmapp.com/self/checkin/" + checkin['id'])
         ev.add('summary', prefix + " " + checkin['venue']['name'])
-        ev.add('location', checkin['venue']['name'])
+        ev.add('location', address)
         ev.add('dtstart', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
         ev.add('dtend', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
+        ev.add('geo', (location['lat'], location['lng']))
         cal.add_component(ev)
 
     return cal.to_ical()
