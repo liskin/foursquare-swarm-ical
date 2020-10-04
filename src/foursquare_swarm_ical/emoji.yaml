@@ -1,0 +1,2172 @@
+categories:
+- name: Arts & Entertainment
+  id: 4d4b7104d754a06370d81259
+  emoji: 😅
+  categories:
+  - name: Amphitheater
+    id: 56aa371be4b08b9a8d5734db
+  - name: Aquarium
+    id: 4fceea171983d5d06c3e9823
+  - name: Arcade
+    id: 4bf58dd8d48988d1e1931735
+  - name: Art Gallery
+    id: 4bf58dd8d48988d1e2931735
+    emoji: 🖼
+  - name: Bowling Alley
+    id: 4bf58dd8d48988d1e4931735
+  - name: Casino
+    id: 4bf58dd8d48988d17c941735
+  - name: Circus
+    id: 52e81612bcbc57f1066b79e7
+    emoji: 🎪
+  - name: Comedy Club
+    id: 4bf58dd8d48988d18e941735
+  - name: Concert Hall
+    id: 5032792091d4c4b30a586d5c
+    emoji: 🎻
+  - name: Country Dance Club
+    id: 52e81612bcbc57f1066b79ef
+  - name: Disc Golf
+    id: 52e81612bcbc57f1066b79e8
+  - name: Escape Room
+    id: 5f2c2834b6d05514c704451e
+  - name: Exhibit
+    id: 56aa371be4b08b9a8d573532
+  - name: General Entertainment
+    id: 4bf58dd8d48988d1f1931735
+  - name: Go Kart Track
+    id: 52e81612bcbc57f1066b79ea
+    emoji: 🏎
+  - name: Historic Site
+    id: 4deefb944765f83613cdba6e
+  - name: Karaoke Box
+    id: 5744ccdfe4b0c0459246b4bb
+  - name: Laser Tag
+    id: 52e81612bcbc57f1066b79e6
+  - name: Memorial Site
+    id: 5642206c498e4bfca532186c
+  - name: Mini Golf
+    id: 52e81612bcbc57f1066b79eb
+    emoji: ⛳
+  - name: Movie Theater
+    id: 4bf58dd8d48988d17f941735
+    emoji: 📽
+    categories:
+    - name: Drive-in Theater
+      id: 56aa371be4b08b9a8d5734de
+    - name: Indie Movie Theater
+      id: 4bf58dd8d48988d17e941735
+    - name: Multiplex
+      id: 4bf58dd8d48988d180941735
+  - name: Museum
+    id: 4bf58dd8d48988d181941735
+    emoji: 🖼
+    categories:
+    - name: Art Museum
+      id: 4bf58dd8d48988d18f941735
+    - name: Erotic Museum
+      id: 559acbe0498e472f1a53fa23
+    - name: History Museum
+      id: 4bf58dd8d48988d190941735
+    - name: Planetarium
+      id: 4bf58dd8d48988d192941735
+      emoji: 🔭
+    - name: Science Museum
+      id: 4bf58dd8d48988d191941735
+      emoji: 🚀
+  - name: Music Venue
+    id: 4bf58dd8d48988d1e5931735
+    emoji: 🎶
+    categories:
+    - name: Jazz Club
+      id: 4bf58dd8d48988d1e7931735
+    - name: Piano Bar
+      id: 4bf58dd8d48988d1e8931735
+    - name: Rock Club
+      id: 4bf58dd8d48988d1e9931735
+  - name: Pachinko Parlor
+    id: 5744ccdfe4b0c0459246b4b8
+  - name: Performing Arts Venue
+    id: 4bf58dd8d48988d1f2931735
+    emoji: 🎭
+    categories:
+    - name: Dance Studio
+      id: 4bf58dd8d48988d134941735
+    - name: Indie Theater
+      id: 4bf58dd8d48988d135941735
+    - name: Opera House
+      id: 4bf58dd8d48988d136941735
+    - name: Theater
+      id: 4bf58dd8d48988d137941735
+  - name: Pool Hall
+    id: 4bf58dd8d48988d1e3931735
+    emoji: 🎱
+  - name: Public Art
+    id: 507c8c4091d498d9fc8c67a9
+    categories:
+    - name: Outdoor Sculpture
+      id: 52e81612bcbc57f1066b79ed
+    - name: Street Art
+      id: 52e81612bcbc57f1066b79ee
+  - name: Racecourse
+    id: 56aa371be4b08b9a8d573514
+    emoji: 🏁
+  - name: Racetrack
+    id: 4bf58dd8d48988d1f4931735
+    emoji: 🏁
+  - name: Roller Rink
+    id: 52e81612bcbc57f1066b79e9
+  - name: Salsa Club
+    id: 52e81612bcbc57f1066b79ec
+    emoji: 🎶
+  - name: Samba School
+    id: 56aa371be4b08b9a8d5734f9
+    emoji: 🎶
+  - name: Stadium
+    id: 4bf58dd8d48988d184941735
+    emoji: 🏟
+    categories:
+    - name: Baseball Stadium
+      id: 4bf58dd8d48988d18c941735
+    - name: Basketball Stadium
+      id: 4bf58dd8d48988d18b941735
+    - name: Cricket Ground
+      id: 4bf58dd8d48988d18a941735
+    - name: Football Stadium
+      id: 4bf58dd8d48988d189941735
+    - name: Hockey Arena
+      id: 4bf58dd8d48988d185941735
+    - name: Rugby Stadium
+      id: 56aa371be4b08b9a8d573556
+    - name: Soccer Stadium
+      id: 4bf58dd8d48988d188941735
+    - name: Tennis Stadium
+      id: 4e39a891bd410d7aed40cbc2
+    - name: Track Stadium
+      id: 4bf58dd8d48988d187941735
+  - name: Theme Park
+    id: 4bf58dd8d48988d182941735
+    emoji: 🎢
+    categories:
+    - name: Theme Park Ride / Attraction
+      id: 5109983191d435c0d71c2bb1
+  - name: Tour Provider
+    id: 56aa371be4b08b9a8d573520
+  - name: VR Cafe
+    id: 5f2c14a5b6d05514c7042eb7
+  - name: Water Park
+    id: 4bf58dd8d48988d193941735
+    emoji: 🌊
+  - name: Zoo
+    id: 4bf58dd8d48988d17b941735
+    emoji: 🐒
+    categories:
+    - name: Zoo Exhibit
+      id: 58daa1558bbb0b01f18ec1fd
+- name: College & University
+  id: 4d4b7105d754a06372d81259
+  emoji: 🎓
+  categories:
+  - name: College Academic Building
+    id: 4bf58dd8d48988d198941735
+    categories:
+    - name: College Arts Building
+      id: 4bf58dd8d48988d199941735
+    - name: College Communications Building
+      id: 4bf58dd8d48988d19a941735
+    - name: College Engineering Building
+      id: 4bf58dd8d48988d19e941735
+    - name: College History Building
+      id: 4bf58dd8d48988d19d941735
+    - name: College Math Building
+      id: 4bf58dd8d48988d19c941735
+    - name: College Science Building
+      id: 4bf58dd8d48988d19b941735
+    - name: College Technology Building
+      id: 4bf58dd8d48988d19f941735
+  - name: College Administrative Building
+    id: 4bf58dd8d48988d197941735
+  - name: College Auditorium
+    id: 4bf58dd8d48988d1af941735
+  - name: College Bookstore
+    id: 4bf58dd8d48988d1b1941735
+    emoji: 📚
+  - name: College Cafeteria
+    id: 4bf58dd8d48988d1a1941735
+    emoji: 🍴
+  - name: College Classroom
+    id: 4bf58dd8d48988d1a0941735
+  - name: College Gym
+    id: 4bf58dd8d48988d1b2941735
+    emoji: 💪
+  - name: College Lab
+    id: 4bf58dd8d48988d1a5941735
+  - name: College Library
+    id: 4bf58dd8d48988d1a7941735
+    emoji: 📚
+  - name: College Quad
+    id: 4bf58dd8d48988d1aa941735
+  - name: College Rec Center
+    id: 4bf58dd8d48988d1a9941735
+  - name: College Residence Hall
+    id: 4bf58dd8d48988d1a3941735
+    emoji: 🛌
+  - name: College Stadium
+    id: 4bf58dd8d48988d1b4941735
+    emoji: 🏟
+    categories:
+    - name: College Baseball Diamond
+      id: 4bf58dd8d48988d1bb941735
+    - name: College Basketball Court
+      id: 4bf58dd8d48988d1ba941735
+    - name: College Cricket Pitch
+      id: 4bf58dd8d48988d1b9941735
+    - name: College Football Field
+      id: 4bf58dd8d48988d1b8941735
+    - name: College Hockey Rink
+      id: 4bf58dd8d48988d1b5941735
+    - name: College Soccer Field
+      id: 4bf58dd8d48988d1b7941735
+    - name: College Tennis Court
+      id: 4e39a9cebd410d7aed40cbc4
+    - name: College Track
+      id: 4bf58dd8d48988d1b6941735
+  - name: College Theater
+    id: 4bf58dd8d48988d1ac941735
+    emoji: 🎭
+  - name: Community College
+    id: 4bf58dd8d48988d1a2941735
+  - name: Fraternity House
+    id: 4bf58dd8d48988d1b0941735
+    emoji: 🏠
+  - name: General College & University
+    id: 4bf58dd8d48988d1a8941735
+  - name: Law School
+    id: 4bf58dd8d48988d1a6941735
+  - name: Medical School
+    id: 4bf58dd8d48988d1b3941735
+  - name: Sorority House
+    id: 4bf58dd8d48988d141941735
+    emoji: 🏠
+  - name: Student Center
+    id: 4bf58dd8d48988d1ab941735
+  - name: Trade School
+    id: 4bf58dd8d48988d1ad941735
+  - name: University
+    id: 4bf58dd8d48988d1ae941735
+- name: Event
+  id: 4d4b7105d754a06373d81259
+  emoji: 🎉
+  categories:
+  - name: Christmas Market
+    id: 52f2ab2ebcbc57f1066b8b3b
+  - name: Conference
+    id: 5267e4d9e4b0ec79466e48c6
+  - name: Convention
+    id: 5267e4d9e4b0ec79466e48c9
+  - name: Festival
+    id: 5267e4d9e4b0ec79466e48c7
+  - name: Line / Queue
+    id: 58daa1558bbb0b01f18ec1fa
+  - name: Music Festival
+    id: 5267e4d9e4b0ec79466e48d1
+    emoji: 🎶
+  - name: Other Event
+    id: 5267e4d9e4b0ec79466e48c8
+  - name: Parade
+    id: 52741d85e4b0d5d1e3c6a6d9
+  - name: Sporting Event
+    id: 5bae9231bedf3950379f89c5
+  - name: Stoop Sale
+    id: 52f2ab2ebcbc57f1066b8b54
+  - name: Street Fair
+    id: 5267e4d8e4b0ec79466e48c5
+  - name: Trade Fair
+    id: 5bae9231bedf3950379f89c3
+- name: Food
+  id: 4d4b7105d754a06374d81259
+  emoji: 🍴
+  categories:
+  - name: Afghan Restaurant
+    id: 503288ae91d4c4b30a586d67
+  - name: African Restaurant
+    id: 4bf58dd8d48988d1c8941735
+    categories:
+    - name: Ethiopian Restaurant
+      id: 4bf58dd8d48988d10a941735
+    - name: Mauritian Restaurant
+      id: 5f2c344a5b4c177b9a6dc011
+  - name: American Restaurant
+    id: 4bf58dd8d48988d14e941735
+    categories:
+    - name: New American Restaurant
+      id: 4bf58dd8d48988d157941735
+  - name: Armenian Restaurant
+    id: 5f2c2b7db6d05514c7044837
+  - name: Asian Restaurant
+    id: 4bf58dd8d48988d142941735
+    categories:
+    - name: Burmese Restaurant
+      id: 56aa371be4b08b9a8d573568
+    - name: Cambodian Restaurant
+      id: 52e81612bcbc57f1066b7a03
+    - name: Chinese Restaurant
+      id: 4bf58dd8d48988d145941735
+      categories:
+      - name: Anhui Restaurant
+        id: 52af3a5e3cf9994f4e043bea
+      - name: Beijing Restaurant
+        id: 52af3a723cf9994f4e043bec
+      - name: Cantonese Restaurant
+        id: 52af3a7c3cf9994f4e043bed
+      - name: Cha Chaan Teng
+        id: 58daa1558bbb0b01f18ec1d3
+      - name: Chinese Aristocrat Restaurant
+        id: 52af3a673cf9994f4e043beb
+      - name: Chinese Breakfast Place
+        id: 52af3a903cf9994f4e043bee
+      - name: Dim Sum Restaurant
+        id: 4bf58dd8d48988d1f5931735
+      - name: Dongbei Restaurant
+        id: 52af3a9f3cf9994f4e043bef
+      - name: Fujian Restaurant
+        id: 52af3aaa3cf9994f4e043bf0
+      - name: Guizhou Restaurant
+        id: 52af3ab53cf9994f4e043bf1
+      - name: Hainan Restaurant
+        id: 52af3abe3cf9994f4e043bf2
+      - name: Hakka Restaurant
+        id: 52af3ac83cf9994f4e043bf3
+      - name: Henan Restaurant
+        id: 52af3ad23cf9994f4e043bf4
+      - name: Hong Kong Restaurant
+        id: 52af3add3cf9994f4e043bf5
+      - name: Huaiyang Restaurant
+        id: 52af3af23cf9994f4e043bf7
+      - name: Hubei Restaurant
+        id: 52af3ae63cf9994f4e043bf6
+      - name: Hunan Restaurant
+        id: 52af3afc3cf9994f4e043bf8
+      - name: Imperial Restaurant
+        id: 52af3b053cf9994f4e043bf9
+      - name: Jiangsu Restaurant
+        id: 52af3b213cf9994f4e043bfa
+      - name: Jiangxi Restaurant
+        id: 52af3b293cf9994f4e043bfb
+      - name: Macanese Restaurant
+        id: 52af3b343cf9994f4e043bfc
+      - name: Manchu Restaurant
+        id: 52af3b3b3cf9994f4e043bfd
+      - name: Peking Duck Restaurant
+        id: 52af3b463cf9994f4e043bfe
+      - name: Shaanxi Restaurant
+        id: 52af3b633cf9994f4e043c01
+      - name: Shandong Restaurant
+        id: 52af3b513cf9994f4e043bff
+      - name: Shanghai Restaurant
+        id: 52af3b593cf9994f4e043c00
+      - name: Shanxi Restaurant
+        id: 52af3b6e3cf9994f4e043c02
+      - name: Szechuan Restaurant
+        id: 52af3b773cf9994f4e043c03
+      - name: Taiwanese Restaurant
+        id: 52af3b813cf9994f4e043c04
+      - name: Tianjin Restaurant
+        id: 52af3b893cf9994f4e043c05
+      - name: Xinjiang Restaurant
+        id: 52af3b913cf9994f4e043c06
+      - name: Yunnan Restaurant
+        id: 52af3b9a3cf9994f4e043c07
+      - name: Zhejiang Restaurant
+        id: 52af3ba23cf9994f4e043c08
+    - name: Filipino Restaurant
+      id: 4eb1bd1c3b7b55596b4a748f
+    - name: Himalayan Restaurant
+      id: 52e81612bcbc57f1066b79fb
+    - name: Hotpot Restaurant
+      id: 52af0bd33cf9994f4e043bdd
+    - name: Indonesian Restaurant
+      id: 4deefc054765f83613cdba6f
+      categories:
+      - name: Acehnese Restaurant
+        id: 52960eda3cf9994f4e043ac9
+      - name: Balinese Restaurant
+        id: 52960eda3cf9994f4e043acb
+      - name: Betawinese Restaurant
+        id: 52960eda3cf9994f4e043aca
+      - name: Indonesian Meatball Place
+        id: 52960eda3cf9994f4e043acc
+      - name: Javanese Restaurant
+        id: 52960eda3cf9994f4e043ac7
+      - name: Manadonese Restaurant
+        id: 52960eda3cf9994f4e043ac8
+      - name: Padangnese Restaurant
+        id: 52960eda3cf9994f4e043ac5
+      - name: Sundanese Restaurant
+        id: 52960eda3cf9994f4e043ac6
+    - name: Japanese Restaurant
+      id: 4bf58dd8d48988d111941735
+      categories:
+      - name: Donburi Restaurant
+        id: 55a59bace4b013909087cb0c
+      - name: Japanese Curry Restaurant
+        id: 55a59bace4b013909087cb30
+      - name: Japanese Family Restaurant
+        id: 5f2c2436b6d05514c704433e
+      - name: Kaiseki Restaurant
+        id: 55a59bace4b013909087cb21
+      - name: Kushikatsu Restaurant
+        id: 55a59bace4b013909087cb06
+      - name: Monjayaki Restaurant
+        id: 55a59bace4b013909087cb1b
+      - name: Nabe Restaurant
+        id: 55a59bace4b013909087cb1e
+      - name: Okonomiyaki Restaurant
+        id: 55a59bace4b013909087cb18
+      - name: Ramen Restaurant
+        id: 55a59bace4b013909087cb24
+      - name: Shabu-Shabu Restaurant
+        id: 55a59bace4b013909087cb15
+      - name: Soba Restaurant
+        id: 55a59bace4b013909087cb27
+      - name: Sukiyaki Restaurant
+        id: 55a59bace4b013909087cb12
+      - name: Sushi Restaurant
+        id: 4bf58dd8d48988d1d2941735
+      - name: Takoyaki Place
+        id: 55a59bace4b013909087cb2d
+      - name: Teishoku Restaurant
+        id: 5f2c239eb6d05514c70441ee
+      - name: Tempura Restaurant
+        id: 55a59a31e4b013909087cb00
+      - name: Tonkatsu Restaurant
+        id: 55a59af1e4b013909087cb03
+      - name: Udon Restaurant
+        id: 55a59bace4b013909087cb2a
+      - name: Unagi Restaurant
+        id: 55a59bace4b013909087cb0f
+      - name: Wagashi Place
+        id: 55a59bace4b013909087cb33
+      - name: Yakitori Restaurant
+        id: 55a59bace4b013909087cb09
+      - name: Yoshoku Restaurant
+        id: 55a59bace4b013909087cb36
+    - name: Korean Restaurant
+      id: 4bf58dd8d48988d113941735
+      categories:
+      - name: Bossam/Jokbal Restaurant
+        id: 56aa371be4b08b9a8d5734e4
+      - name: Bunsik Restaurant
+        id: 56aa371be4b08b9a8d5734f0
+      - name: Gukbap Restaurant
+        id: 56aa371be4b08b9a8d5734e7
+      - name: Janguh Restaurant
+        id: 56aa371be4b08b9a8d5734ed
+      - name: Korean BBQ Restaurant
+        id: 5f2c3f6b5b4c177b9a6dc388
+      - name: Samgyetang Restaurant
+        id: 56aa371be4b08b9a8d5734ea
+    - name: Malay Restaurant
+      id: 4bf58dd8d48988d156941735
+      categories:
+      - name: Mamak Restaurant
+        id: 5ae9595eb77c77002c2f9f26
+    - name: Mongolian Restaurant
+      id: 4eb1d5724b900d56c88a45fe
+    - name: Noodle House
+      id: 4bf58dd8d48988d1d1941735
+    - name: Satay Restaurant
+      id: 56aa371be4b08b9a8d57350e
+    - name: Singaporean Restaurant
+      id: 5f2c430e5b4c177b9a6dcabd
+    - name: Thai Restaurant
+      id: 4bf58dd8d48988d149941735
+      categories:
+      - name: Som Tum Restaurant
+        id: 56aa371be4b08b9a8d573502
+    - name: Tibetan Restaurant
+      id: 52af39fb3cf9994f4e043be9
+    - name: Vietnamese Restaurant
+      id: 4bf58dd8d48988d14a941735
+  - name: Australian Restaurant
+    id: 4bf58dd8d48988d169941735
+  - name: Austrian Restaurant
+    id: 52e81612bcbc57f1066b7a01
+  - name: BBQ Joint
+    id: 4bf58dd8d48988d1df931735
+  - name: Bagel Shop
+    id: 4bf58dd8d48988d179941735
+  - name: Bakery
+    id: 4bf58dd8d48988d16a941735
+    emoji: 🥐
+  - name: Bangladeshi Restaurant
+    id: 5e179ee74ae8e90006e9a746
+  - name: Belgian Restaurant
+    id: 52e81612bcbc57f1066b7a02
+  - name: Bistro
+    id: 52e81612bcbc57f1066b79f1
+  - name: Breakfast Spot
+    id: 4bf58dd8d48988d143941735
+  - name: Bubble Tea Shop
+    id: 52e81612bcbc57f1066b7a0c
+  - name: Buffet
+    id: 52e81612bcbc57f1066b79f4
+  - name: Burger Joint
+    id: 4bf58dd8d48988d16c941735
+    emoji: 🍔
+  - name: Cafeteria
+    id: 4bf58dd8d48988d128941735
+  - name: Café
+    id: 4bf58dd8d48988d16d941735
+    emoji: ☕
+  - name: Cajun / Creole Restaurant
+    id: 4bf58dd8d48988d17a941735
+  - name: Caribbean Restaurant
+    id: 4bf58dd8d48988d144941735
+    categories:
+    - name: Cuban Restaurant
+      id: 4bf58dd8d48988d154941735
+    - name: Puerto Rican Restaurant
+      id: 5f2c2abab6d05514c70446e4
+  - name: Caucasian Restaurant
+    id: 5293a7d53cf9994f4e043a45
+  - name: Coffee Shop
+    id: 4bf58dd8d48988d1e0931735
+    emoji: ☕
+  - name: Comfort Food Restaurant
+    id: 52e81612bcbc57f1066b7a00
+  - name: Creperie
+    id: 52e81612bcbc57f1066b79f2
+  - name: Czech Restaurant
+    id: 52f2ae52bcbc57f1066b8b81
+  - name: Deli / Bodega
+    id: 4bf58dd8d48988d146941735
+  - name: Dessert Shop
+    id: 4bf58dd8d48988d1d0941735
+    emoji: 🍰
+    categories:
+    - name: Cupcake Shop
+      id: 4bf58dd8d48988d1bc941735
+    - name: Frozen Yogurt Shop
+      id: 512e7cae91d4cbb4e5efe0af
+    - name: Gelato Shop
+      id: 5f2c407c5b4c177b9a6dc536
+    - name: Ice Cream Shop
+      id: 4bf58dd8d48988d1c9941735
+    - name: Pastry Shop
+      id: 5744ccdfe4b0c0459246b4e2
+    - name: Pie Shop
+      id: 52e81612bcbc57f1066b7a0a
+  - name: Diner
+    id: 4bf58dd8d48988d147941735
+  - name: Donut Shop
+    id: 4bf58dd8d48988d148941735
+    emoji: 🍩
+  - name: Dumpling Restaurant
+    id: 4bf58dd8d48988d108941735
+  - name: Dutch Restaurant
+    id: 5744ccdfe4b0c0459246b4d0
+  - name: Eastern European Restaurant
+    id: 4bf58dd8d48988d109941735
+    categories:
+    - name: Belarusian Restaurant
+      id: 52e928d0bcbc57f1066b7e97
+    - name: Bosnian Restaurant
+      id: 58daa1558bbb0b01f18ec1ee
+    - name: Bulgarian Restaurant
+      id: 56aa371be4b08b9a8d5734f3
+    - name: Romanian Restaurant
+      id: 52960bac3cf9994f4e043ac4
+    - name: Tatar Restaurant
+      id: 52e928d0bcbc57f1066b7e98
+  - name: English Restaurant
+    id: 52e81612bcbc57f1066b7a05
+  - name: Falafel Restaurant
+    id: 4bf58dd8d48988d10b941735
+  - name: Fast Food Restaurant
+    id: 4bf58dd8d48988d16e941735
+  - name: Fish & Chips Shop
+    id: 4edd64a0c7ddd24ca188df1a
+  - name: Fondue Restaurant
+    id: 52e81612bcbc57f1066b7a09
+  - name: Food Court
+    id: 4bf58dd8d48988d120951735
+  - name: Food Stand
+    id: 56aa371be4b08b9a8d57350b
+  - name: Food Truck
+    id: 4bf58dd8d48988d1cb941735
+  - name: French Restaurant
+    id: 4bf58dd8d48988d10c941735
+    categories:
+    - name: Alsatian Restaurant
+      id: 57558b36e4b065ecebd306b6
+    - name: Auvergne Restaurant
+      id: 57558b36e4b065ecebd306b8
+    - name: Basque Restaurant
+      id: 57558b36e4b065ecebd306bc
+    - name: Brasserie
+      id: 57558b36e4b065ecebd306b0
+    - name: Breton Restaurant
+      id: 57558b36e4b065ecebd306c5
+    - name: Burgundian Restaurant
+      id: 57558b36e4b065ecebd306c0
+    - name: Catalan Restaurant
+      id: 57558b36e4b065ecebd306cb
+    - name: Ch'ti Restaurant
+      id: 57558b36e4b065ecebd306ce
+    - name: Corsican Restaurant
+      id: 57558b36e4b065ecebd306d1
+    - name: Estaminet
+      id: 57558b36e4b065ecebd306b4
+    - name: Labour Canteen
+      id: 57558b36e4b065ecebd306b2
+    - name: Lyonese Bouchon
+      id: 57558b35e4b065ecebd306ad
+    - name: Norman Restaurant
+      id: 57558b36e4b065ecebd306d4
+    - name: Provençal Restaurant
+      id: 57558b36e4b065ecebd306d7
+    - name: Savoyard Restaurant
+      id: 57558b36e4b065ecebd306da
+    - name: Southwestern French Restaurant
+      id: 57558b36e4b065ecebd306ba
+  - name: Fried Chicken Joint
+    id: 4d4ae6fc7a7b7dea34424761
+  - name: Friterie
+    id: 55d25775498e9f6a0816a37a
+  - name: Gastropub
+    id: 4bf58dd8d48988d155941735
+  - name: German Restaurant
+    id: 4bf58dd8d48988d10d941735
+    categories:
+    - name: Apple Wine Pub
+      id: 56aa371ce4b08b9a8d573583
+    - name: Bavarian Restaurant
+      id: 56aa371ce4b08b9a8d573572
+    - name: Bratwurst Joint
+      id: 56aa371ce4b08b9a8d57358e
+    - name: Currywurst Joint
+      id: 56aa371ce4b08b9a8d57358b
+    - name: Franconian Restaurant
+      id: 56aa371ce4b08b9a8d573574
+    - name: German Pop-Up Restaurant
+      id: 56aa371ce4b08b9a8d573592
+    - name: Palatine Restaurant
+      id: 56aa371ce4b08b9a8d573578
+    - name: Rhenisch Restaurant
+      id: 56aa371ce4b08b9a8d57357b
+    - name: Schnitzel Restaurant
+      id: 56aa371ce4b08b9a8d573587
+    - name: Silesian Restaurant
+      id: 56aa371ce4b08b9a8d57357f
+    - name: Swabian Restaurant
+      id: 56aa371ce4b08b9a8d573576
+  - name: Gluten-free Restaurant
+    id: 4c2cd86ed066bed06c3c5209
+  - name: Greek Restaurant
+    id: 4bf58dd8d48988d10e941735
+    categories:
+    - name: Bougatsa Shop
+      id: 53d6c1b0e4b02351e88a83e8
+    - name: Cretan Restaurant
+      id: 53d6c1b0e4b02351e88a83e2
+    - name: Fish Taverna
+      id: 53d6c1b0e4b02351e88a83d8
+    - name: Grilled Meat Restaurant
+      id: 53d6c1b0e4b02351e88a83d6
+    - name: Kafenio
+      id: 53d6c1b0e4b02351e88a83e6
+    - name: Magirio
+      id: 53d6c1b0e4b02351e88a83e4
+    - name: Meze Restaurant
+      id: 53d6c1b0e4b02351e88a83da
+    - name: Modern Greek Restaurant
+      id: 53d6c1b0e4b02351e88a83d4
+    - name: Ouzeri
+      id: 53d6c1b0e4b02351e88a83dc
+    - name: Patsa Restaurant
+      id: 53d6c1b0e4b02351e88a83e0
+    - name: Souvlaki Shop
+      id: 52e81612bcbc57f1066b79f3
+    - name: Taverna
+      id: 53d6c1b0e4b02351e88a83d2
+    - name: Tsipouro Restaurant
+      id: 53d6c1b0e4b02351e88a83de
+  - name: Halal Restaurant
+    id: 52e81612bcbc57f1066b79ff
+  - name: Hawaiian Restaurant
+    id: 52e81612bcbc57f1066b79fe
+    categories:
+    - name: Poke Place
+      id: 5bae9231bedf3950379f89d4
+  - name: Hot Dog Joint
+    id: 4bf58dd8d48988d16f941735
+    emoji: 🌭
+  - name: Hungarian Restaurant
+    id: 52e81612bcbc57f1066b79fa
+  - name: Indian Restaurant
+    id: 4bf58dd8d48988d10f941735
+    categories:
+    - name: Andhra Restaurant
+      id: 54135bf5e4b08f3d2429dfe5
+    - name: Awadhi Restaurant
+      id: 54135bf5e4b08f3d2429dff3
+    - name: Bengali Restaurant
+      id: 54135bf5e4b08f3d2429dff5
+    - name: Chaat Place
+      id: 54135bf5e4b08f3d2429dfe2
+    - name: Chettinad Restaurant
+      id: 54135bf5e4b08f3d2429dff2
+    - name: Dhaba
+      id: 54135bf5e4b08f3d2429dfe1
+    - name: Dosa Place
+      id: 54135bf5e4b08f3d2429dfe3
+    - name: Goan Restaurant
+      id: 54135bf5e4b08f3d2429dfe8
+    - name: Gujarati Restaurant
+      id: 54135bf5e4b08f3d2429dfe9
+    - name: Hyderabadi Restaurant
+      id: 54135bf5e4b08f3d2429dfe6
+    - name: Indian Chinese Restaurant
+      id: 54135bf5e4b08f3d2429dfdf
+    - name: Indian Sweet Shop
+      id: 54135bf5e4b08f3d2429dfe4
+    - name: Irani Cafe
+      id: 54135bf5e4b08f3d2429dfe7
+    - name: Jain Restaurant
+      id: 54135bf5e4b08f3d2429dfea
+    - name: Karnataka Restaurant
+      id: 54135bf5e4b08f3d2429dfeb
+    - name: Kerala Restaurant
+      id: 54135bf5e4b08f3d2429dfed
+    - name: Maharashtrian Restaurant
+      id: 54135bf5e4b08f3d2429dfee
+    - name: Mughlai Restaurant
+      id: 54135bf5e4b08f3d2429dff4
+    - name: Multicuisine Indian Restaurant
+      id: 54135bf5e4b08f3d2429dfe0
+    - name: North Indian Restaurant
+      id: 54135bf5e4b08f3d2429dfdd
+    - name: Northeast Indian Restaurant
+      id: 54135bf5e4b08f3d2429dff6
+    - name: Parsi Restaurant
+      id: 54135bf5e4b08f3d2429dfef
+    - name: Punjabi Restaurant
+      id: 54135bf5e4b08f3d2429dff0
+    - name: Rajasthani Restaurant
+      id: 54135bf5e4b08f3d2429dff1
+    - name: South Indian Restaurant
+      id: 54135bf5e4b08f3d2429dfde
+    - name: Udupi Restaurant
+      id: 54135bf5e4b08f3d2429dfec
+  - name: Irish Pub
+    id: 52e81612bcbc57f1066b7a06
+  - name: Italian Restaurant
+    id: 4bf58dd8d48988d110941735
+    categories:
+    - name: Abruzzo Restaurant
+      id: 55a5a1ebe4b013909087cbb6
+    - name: Agriturismo
+      id: 55a5a1ebe4b013909087cb7c
+    - name: Aosta Restaurant
+      id: 55a5a1ebe4b013909087cba7
+    - name: Basilicata Restaurant
+      id: 55a5a1ebe4b013909087cba1
+    - name: Calabria Restaurant
+      id: 55a5a1ebe4b013909087cba4
+    - name: Campanian Restaurant
+      id: 55a5a1ebe4b013909087cb95
+    - name: Emilia Restaurant
+      id: 55a5a1ebe4b013909087cb89
+    - name: Friuli Restaurant
+      id: 55a5a1ebe4b013909087cb9b
+    - name: Ligurian Restaurant
+      id: 55a5a1ebe4b013909087cb98
+    - name: Lombard Restaurant
+      id: 55a5a1ebe4b013909087cbbf
+    - name: Malga
+      id: 55a5a1ebe4b013909087cb79
+    - name: Marche Restaurant
+      id: 55a5a1ebe4b013909087cbb0
+    - name: Molise Restaurant
+      id: 55a5a1ebe4b013909087cbb3
+    - name: Piadineria
+      id: 55a5a1ebe4b013909087cb74
+    - name: Piedmontese Restaurant
+      id: 55a5a1ebe4b013909087cbaa
+    - name: Puglia Restaurant
+      id: 55a5a1ebe4b013909087cb83
+    - name: Romagna Restaurant
+      id: 55a5a1ebe4b013909087cb8c
+    - name: Roman Restaurant
+      id: 55a5a1ebe4b013909087cb92
+    - name: Sardinian Restaurant
+      id: 55a5a1ebe4b013909087cb8f
+    - name: Sicilian Restaurant
+      id: 55a5a1ebe4b013909087cb86
+    - name: South Tyrolean Restaurant
+      id: 55a5a1ebe4b013909087cbb9
+    - name: Trattoria/Osteria
+      id: 55a5a1ebe4b013909087cb7f
+    - name: Trentino Restaurant
+      id: 55a5a1ebe4b013909087cbbc
+    - name: Tuscan Restaurant
+      id: 55a5a1ebe4b013909087cb9e
+    - name: Umbrian Restaurant
+      id: 55a5a1ebe4b013909087cbc2
+    - name: Veneto Restaurant
+      id: 55a5a1ebe4b013909087cbad
+  - name: Jewish Restaurant
+    id: 52e81612bcbc57f1066b79fd
+    categories:
+    - name: Kosher Restaurant
+      id: 52e81612bcbc57f1066b79fc
+  - name: Juice Bar
+    id: 4bf58dd8d48988d112941735
+  - name: Kebab Restaurant
+    id: 5283c7b4e4b094cb91ec88d7
+  - name: Latin American Restaurant
+    id: 4bf58dd8d48988d1be941735
+    categories:
+    - name: Arepa Restaurant
+      id: 4bf58dd8d48988d152941735
+    - name: Empanada Restaurant
+      id: 52939a8c3cf9994f4e043a35
+    - name: Honduran Restaurant
+      id: 5f2c32587ff30c0d7ac09638
+    - name: Salvadoran Restaurant
+      id: 5745c7ac498e5d0483112fdb
+    - name: South American Restaurant
+      id: 4bf58dd8d48988d1cd941735
+      categories:
+      - name: Argentinian Restaurant
+        id: 4bf58dd8d48988d107941735
+      - name: Brazilian Restaurant
+        id: 4bf58dd8d48988d16b941735
+        categories:
+        - name: Acai House
+          id: 5294c7523cf9994f4e043a62
+        - name: Baiano Restaurant
+          id: 52939ae13cf9994f4e043a3b
+        - name: Central Brazilian Restaurant
+          id: 52939a9e3cf9994f4e043a36
+        - name: Churrascaria
+          id: 52939a643cf9994f4e043a33
+        - name: Empada House
+          id: 5294c55c3cf9994f4e043a61
+        - name: Goiano Restaurant
+          id: 52939af83cf9994f4e043a3d
+        - name: Mineiro Restaurant
+          id: 52939aed3cf9994f4e043a3c
+        - name: Northeastern Brazilian Restaurant
+          id: 52939aae3cf9994f4e043a37
+        - name: Northern Brazilian Restaurant
+          id: 52939ab93cf9994f4e043a38
+        - name: Pastelaria
+          id: 5294cbda3cf9994f4e043a63
+        - name: Southeastern Brazilian Restaurant
+          id: 52939ac53cf9994f4e043a39
+        - name: Southern Brazilian Restaurant
+          id: 52939ad03cf9994f4e043a3a
+        - name: Tapiocaria
+          id: 52939a7d3cf9994f4e043a34
+      - name: Colombian Restaurant
+        id: 58daa1558bbb0b01f18ec1f4
+      - name: Peruvian Restaurant
+        id: 4eb1bfa43b7b52c0e1adc2e8
+        categories:
+        - name: Peruvian Roast Chicken Joint
+          id: 5f2c1c31b6d05514c704334c
+      - name: Venezuelan Restaurant
+        id: 56aa371be4b08b9a8d573558
+  - name: Mac & Cheese Joint
+    id: 4bf58dd8d48988d1bf941735
+  - name: Mediterranean Restaurant
+    id: 4bf58dd8d48988d1c0941735
+    categories:
+    - name: Moroccan Restaurant
+      id: 4bf58dd8d48988d1c3941735
+  - name: Mexican Restaurant
+    id: 4bf58dd8d48988d1c1941735
+    categories:
+    - name: Botanero
+      id: 58daa1558bbb0b01f18ec1d9
+    - name: Burrito Place
+      id: 4bf58dd8d48988d153941735
+    - name: Taco Place
+      id: 4bf58dd8d48988d151941735
+    - name: Tex-Mex Restaurant
+      id: 56aa371ae4b08b9a8d5734ba
+    - name: Yucatecan Restaurant
+      id: 5744ccdfe4b0c0459246b4d3
+  - name: Middle Eastern Restaurant
+    id: 4bf58dd8d48988d115941735
+    categories:
+    - name: Egyptian Restaurant
+      id: 5bae9231bedf3950379f89e1
+    - name: Iraqi Restaurant
+      id: 5bae9231bedf3950379f89e7
+    - name: Israeli Restaurant
+      id: 56aa371be4b08b9a8d573529
+    - name: Kurdish Restaurant
+      id: 5744ccdfe4b0c0459246b4ca
+    - name: Lebanese Restaurant
+      id: 58daa1558bbb0b01f18ec1cd
+    - name: Persian Restaurant
+      id: 52e81612bcbc57f1066b79f7
+      categories:
+      - name: Ash and Haleem Place
+        id: 58daa1558bbb0b01f18ec1bc
+      - name: Dizi Place
+        id: 58daa1558bbb0b01f18ec1c0
+      - name: Gilaki Restaurant
+        id: 58daa1558bbb0b01f18ec1c4
+      - name: Jegaraki
+        id: 58daa1558bbb0b01f18ec1c7
+      - name: Tabbakhi
+        id: 5744ccdfe4b0c0459246b4a8
+    - name: Shawarma Place
+      id: 5bae9231bedf3950379f89e4
+    - name: Syrian Restaurant
+      id: 5bae9231bedf3950379f89da
+    - name: Yemeni Restaurant
+      id: 5bae9231bedf3950379f89ea
+  - name: Modern European Restaurant
+    id: 52e81612bcbc57f1066b79f9
+  - name: Molecular Gastronomy Restaurant
+    id: 4bf58dd8d48988d1c2941735
+  - name: Pakistani Restaurant
+    id: 52e81612bcbc57f1066b79f8
+  - name: Pet Café
+    id: 56aa371be4b08b9a8d573508
+  - name: Pizza Place
+    id: 4bf58dd8d48988d1ca941735
+    emoji: 🍕
+  - name: Polish Restaurant
+    id: 52e81612bcbc57f1066b7a04
+  - name: Portuguese Restaurant
+    id: 4def73e84765ae376e57713a
+  - name: Poutine Place
+    id: 56aa371be4b08b9a8d5734c7
+  - name: Restaurant
+    id: 4bf58dd8d48988d1c4941735
+  - name: Russian Restaurant
+    id: 5293a7563cf9994f4e043a44
+    categories:
+    - name: Blini House
+      id: 52e928d0bcbc57f1066b7e9d
+    - name: Pelmeni House
+      id: 52e928d0bcbc57f1066b7e9c
+  - name: Salad Place
+    id: 4bf58dd8d48988d1bd941735
+    emoji: 🥗
+  - name: Sandwich Place
+    id: 4bf58dd8d48988d1c5941735
+    emoji: 🥪
+  - name: Scandinavian Restaurant
+    id: 4bf58dd8d48988d1c6941735
+  - name: Scottish Restaurant
+    id: 5744ccdde4b0c0459246b4a3
+  - name: Seafood Restaurant
+    id: 4bf58dd8d48988d1ce941735
+  - name: Slovak Restaurant
+    id: 56aa371be4b08b9a8d57355a
+  - name: Snack Place
+    id: 4bf58dd8d48988d1c7941735
+  - name: Soup Place
+    id: 4bf58dd8d48988d1dd931735
+  - name: Southern / Soul Food Restaurant
+    id: 4bf58dd8d48988d14f941735
+  - name: Spanish Restaurant
+    id: 4bf58dd8d48988d150941735
+    categories:
+    - name: Paella Restaurant
+      id: 4bf58dd8d48988d14d941735
+    - name: Tapas Restaurant
+      id: 4bf58dd8d48988d1db931735
+  - name: Sri Lankan Restaurant
+    id: 5413605de4b0ae91d18581a9
+  - name: Steakhouse
+    id: 4bf58dd8d48988d1cc941735
+  - name: Swiss Restaurant
+    id: 4bf58dd8d48988d158941735
+  - name: Tea Room
+    id: 4bf58dd8d48988d1dc931735
+    emoji: ☕
+  - name: Theme Restaurant
+    id: 56aa371be4b08b9a8d573538
+  - name: Turkish Restaurant
+    id: 4f04af1f2fb6e1c99f3db0bb
+    categories:
+    - name: Borek Place
+      id: 530faca9bcbc57f1066bc2f3
+    - name: Cigkofte Place
+      id: 530faca9bcbc57f1066bc2f4
+    - name: Doner Restaurant
+      id: 5283c7b4e4b094cb91ec88d8
+    - name: Gozleme Place
+      id: 5283c7b4e4b094cb91ec88d9
+    - name: Kofte Place
+      id: 5283c7b4e4b094cb91ec88db
+    - name: Kokoreç Restaurant
+      id: 5283c7b4e4b094cb91ec88d6
+    - name: Kumpir Restaurant
+      id: 56aa371be4b08b9a8d573535
+    - name: Kumru Restaurant
+      id: 56aa371be4b08b9a8d5734bd
+    - name: Manti Place
+      id: 5283c7b4e4b094cb91ec88d5
+    - name: Meyhane
+      id: 5283c7b4e4b094cb91ec88da
+    - name: Pide Place
+      id: 530faca9bcbc57f1066bc2f2
+    - name: Pilavcı
+      id: 58daa1558bbb0b01f18ec1df
+    - name: Söğüş Place
+      id: 58daa1558bbb0b01f18ec1dc
+    - name: Tantuni Restaurant
+      id: 56aa371be4b08b9a8d5734bf
+    - name: Turkish Coffeehouse
+      id: 56aa371be4b08b9a8d5734c1
+    - name: Turkish Home Cooking Restaurant
+      id: 5283c7b4e4b094cb91ec88d4
+    - name: Çöp Şiş Place
+      id: 58daa1558bbb0b01f18ec1e2
+  - name: Ukrainian Restaurant
+    id: 52e928d0bcbc57f1066b7e96
+    categories:
+    - name: Varenyky restaurant
+      id: 52e928d0bcbc57f1066b7e9a
+    - name: West-Ukrainian Restaurant
+      id: 52e928d0bcbc57f1066b7e9b
+  - name: Vegetarian / Vegan Restaurant
+    id: 4bf58dd8d48988d1d3941735
+  - name: Wings Joint
+    id: 4bf58dd8d48988d14c941735
+- name: Nightlife Spot
+  id: 4d4b7105d754a06376d81259
+  categories:
+  - name: Bar
+    id: 4bf58dd8d48988d116941735
+    emoji: 🍻
+    categories:
+    - name: Beach Bar
+      id: 52e81612bcbc57f1066b7a0d
+      emoji: 🏖
+    - name: Beer Bar
+      id: 56aa371ce4b08b9a8d57356c
+      emoji: 🍺
+    - name: Beer Garden
+      id: 4bf58dd8d48988d117941735
+      emoji: 🍺
+    - name: Champagne Bar
+      id: 52e81612bcbc57f1066b7a0e
+    - name: Cocktail Bar
+      id: 4bf58dd8d48988d11e941735
+      emoji: 🍸
+    - name: Dive Bar
+      id: 4bf58dd8d48988d118941735
+    - name: Gay Bar
+      id: 4bf58dd8d48988d1d8941735
+      emoji: 🌈
+    - name: Hookah Bar
+      id: 4bf58dd8d48988d119941735
+    - name: Hotel Bar
+      id: 4bf58dd8d48988d1d5941735
+    - name: Ice Bar
+      id: 5f2c40f15b4c177b9a6dc684
+    - name: Karaoke Bar
+      id: 4bf58dd8d48988d120941735
+    - name: Pub
+      id: 4bf58dd8d48988d11b941735
+      emoji: 🍺
+    - name: Rooftop Bar
+      id: 5f2c224bb6d05514c70440a3
+    - name: Sake Bar
+      id: 4bf58dd8d48988d11c941735
+    - name: Speakeasy
+      id: 4bf58dd8d48988d1d4941735
+    - name: Sports Bar
+      id: 4bf58dd8d48988d11d941735
+    - name: Tiki Bar
+      id: 56aa371be4b08b9a8d57354d
+    - name: Whisky Bar
+      id: 4bf58dd8d48988d122941735
+      emoji: 🥃
+    - name: Wine Bar
+      id: 4bf58dd8d48988d123941735
+      emoji: 🍷
+  - name: Brewery
+    id: 50327c8591d4c4b30a586d5d
+    emoji: 🍺
+  - name: Lounge
+    id: 4bf58dd8d48988d121941735
+  - name: Night Market
+    id: 53e510b7498ebcb1801b55d4
+  - name: Nightclub
+    id: 4bf58dd8d48988d11f941735
+    emoji: 🎶
+  - name: Other Nightlife
+    id: 4bf58dd8d48988d11a941735
+  - name: Strip Club
+    id: 4bf58dd8d48988d1d6941735
+    emoji: 👠
+- name: Outdoors & Recreation
+  id: 4d4b7105d754a06377d81259
+  emoji: 🏞
+  categories:
+  - name: Athletics & Sports
+    id: 4f4528bc4b90abdf24c9de85
+    categories:
+    - name: Badminton Court
+      id: 52e81612bcbc57f1066b7a2b
+      emoji: 🏸
+    - name: Baseball Field
+      id: 4bf58dd8d48988d1e8941735
+      emoji: ⚾
+    - name: Basketball Court
+      id: 4bf58dd8d48988d1e1941735
+      emoji: 🏀
+    - name: Bowling Green
+      id: 52e81612bcbc57f1066b7a2f
+    - name: Curling Ice
+      id: 56aa371be4b08b9a8d57351a
+    - name: Golf Course
+      id: 4bf58dd8d48988d1e6941735
+    - name: Golf Driving Range
+      id: 58daa1558bbb0b01f18ec1b0
+    - name: Gym / Fitness Center
+      id: 4bf58dd8d48988d175941735
+      emoji: 💪
+      categories:
+      - name: Boxing Gym
+        id: 52f2ab2ebcbc57f1066b8b47
+      - name: Climbing Gym
+        id: 503289d391d4c4b30a586d6a
+      - name: Cycle Studio
+        id: 52f2ab2ebcbc57f1066b8b49
+      - name: Gym Pool
+        id: 4bf58dd8d48988d105941735
+      - name: Gymnastics Gym
+        id: 52f2ab2ebcbc57f1066b8b48
+      - name: Gym
+        id: 4bf58dd8d48988d176941735
+      - name: Martial Arts School
+        id: 4bf58dd8d48988d101941735
+      - name: Outdoor Gym
+        id: 58daa1558bbb0b01f18ec203
+      - name: Pilates Studio
+        id: 5744ccdfe4b0c0459246b4b2
+      - name: Track
+        id: 4bf58dd8d48988d106941735
+      - name: Weight Loss Center
+        id: 590a0744340a5803fd8508c3
+      - name: Yoga Studio
+        id: 4bf58dd8d48988d102941735
+    - name: Hockey Field
+      id: 4f452cd44b9081a197eba860
+    - name: Hockey Rink
+      id: 56aa371be4b08b9a8d57352c
+    - name: Paintball Field
+      id: 5032829591d4c4b30a586d5e
+    - name: Rugby Pitch
+      id: 52e81612bcbc57f1066b7a2c
+      emoji: 🏉
+    - name: Skate Park
+      id: 4bf58dd8d48988d167941735
+      emoji: 🛹
+    - name: Skating Rink
+      id: 4bf58dd8d48988d168941735
+      emoji: ⛸
+    - name: Soccer Field
+      id: 4cce455aebf7b749d5e191f5
+      emoji: ⚽️
+    - name: Sports Club
+      id: 52e81612bcbc57f1066b7a2e
+    - name: Squash Court
+      id: 52e81612bcbc57f1066b7a2d
+      emoji: 🎾
+    - name: Tennis Court
+      id: 4e39a956bd410d7aed40cbc3
+      emoji: 🎾
+    - name: Volleyball Court
+      id: 4eb1bf013b7b6f98df247e07
+      emoji: 🏐
+  - name: Bathing Area
+    id: 52e81612bcbc57f1066b7a28
+  - name: Bay
+    id: 56aa371be4b08b9a8d573544
+  - name: Beach
+    id: 4bf58dd8d48988d1e2941735
+    emoji: 🏖
+    categories:
+    - name: Nudist Beach
+      id: 52e81612bcbc57f1066b7a30
+    - name: Surf Spot
+      id: 4bf58dd8d48988d1e3941735
+  - name: Bike Trail
+    id: 56aa371be4b08b9a8d57355e
+  - name: Botanical Garden
+    id: 52e81612bcbc57f1066b7a22
+  - name: Bridge
+    id: 4bf58dd8d48988d1df941735
+  - name: Campground
+    id: 4bf58dd8d48988d1e4941735
+    emoji: 🏕
+  - name: Canal Lock
+    id: 56aa371be4b08b9a8d57353b
+  - name: Canal
+    id: 56aa371be4b08b9a8d573562
+  - name: Castle
+    id: 50aaa49e4b90af0d42d5de11
+    emoji: 🏰
+  - name: Cave
+    id: 56aa371be4b08b9a8d573511
+  - name: Cemetery
+    id: 4bf58dd8d48988d15c941735
+    emoji: 🪦
+  - name: Dive Spot
+    id: 52e81612bcbc57f1066b7a12
+  - name: Dog Run
+    id: 4bf58dd8d48988d1e5941735
+    emoji: 🐕
+  - name: Farm
+    id: 4bf58dd8d48988d15b941735
+  - name: Field
+    id: 4bf58dd8d48988d15f941735
+  - name: Fishing Spot
+    id: 52e81612bcbc57f1066b7a0f
+    emoji: 🐟
+  - name: Forest
+    id: 52e81612bcbc57f1066b7a23
+  - name: Fountain
+    id: 56aa371be4b08b9a8d573547
+    emoji: ⛲
+  - name: Garden
+    id: 4bf58dd8d48988d15a941735
+  - name: Gun Range
+    id: 52e81612bcbc57f1066b7a11
+  - name: Harbor / Marina
+    id: 4bf58dd8d48988d1e0941735
+  - name: Hill
+    id: 5bae9231bedf3950379f89cd
+    emoji: ⛰
+  - name: Hot Spring
+    id: 4bf58dd8d48988d160941735
+  - name: Indoor Play Area
+    id: 5744ccdfe4b0c0459246b4b5
+  - name: Island
+    id: 50aaa4314b90af0d42d5de10
+    emoji: 🏝
+  - name: Lake
+    id: 4bf58dd8d48988d161941735
+  - name: Lighthouse
+    id: 4bf58dd8d48988d15d941735
+  - name: Mountain Hut
+    id: 55a5a1ebe4b013909087cb77
+  - name: Mountain
+    id: 4eb1d4d54b900d56c88a45fc
+    emoji: 🏔
+  - name: National Park
+    id: 52e81612bcbc57f1066b7a21
+  - name: Nature Preserve
+    id: 52e81612bcbc57f1066b7a13
+  - name: Other Great Outdoors
+    id: 4bf58dd8d48988d162941735
+  - name: Palace
+    id: 52e81612bcbc57f1066b7a14
+  - name: Park
+    id: 4bf58dd8d48988d163941735
+  - name: Pedestrian Plaza
+    id: 52e81612bcbc57f1066b7a25
+  - name: Playground
+    id: 4bf58dd8d48988d1e7941735
+  - name: Plaza
+    id: 4bf58dd8d48988d164941735
+  - name: Pool
+    id: 4bf58dd8d48988d15e941735
+    emoji: 🏊
+  - name: Rafting
+    id: 52e81612bcbc57f1066b7a29
+  - name: Recreation Center
+    id: 52e81612bcbc57f1066b7a26
+  - name: Reservoir
+    id: 56aa371be4b08b9a8d573541
+  - name: River
+    id: 4eb1d4dd4b900d56c88a45fd
+  - name: Rock Climbing Spot
+    id: 50328a4b91d4c4b30a586d6b
+  - name: Roof Deck
+    id: 4bf58dd8d48988d133951735
+  - name: Scenic Lookout
+    id: 4bf58dd8d48988d165941735
+  - name: Sculpture Garden
+    id: 4bf58dd8d48988d166941735
+  - name: Ski Area
+    id: 4bf58dd8d48988d1e9941735
+    emoji: ⛷
+    categories:
+    - name: Apres Ski Bar
+      id: 4bf58dd8d48988d1ea941735
+    - name: Ski Chairlift
+      id: 4eb1c0ed3b7b52c0e1adc2ea
+    - name: Ski Chalet
+      id: 4bf58dd8d48988d1ec941735
+    - name: Ski Lodge
+      id: 4bf58dd8d48988d1eb941735
+    - name: Ski Trail
+      id: 4eb1c0f63b7b52c0e1adc2eb
+  - name: Skydiving Drop Zone
+    id: 58daa1558bbb0b01f18ec1b9
+  - name: Stables
+    id: 4eb1baf03b7b2c5b1d4306ca
+  - name: State / Provincial Park
+    id: 5bae9231bedf3950379f89d0
+  - name: States & Municipalities
+    id: 530e33ccbcbc57f1066bbfe4
+    emoji: 🏙
+    categories:
+    - name: City
+      id: 50aa9e094b90af0d42d5de0d
+    - name: County
+      id: 5345731ebcbc57f1066c39b2
+    - name: Country
+      id: 530e33ccbcbc57f1066bbff7
+    - name: Neighborhood
+      id: 4f2a25ac4b909258e854f55f
+    - name: State
+      id: 530e33ccbcbc57f1066bbff8
+    - name: Town
+      id: 530e33ccbcbc57f1066bbff3
+    - name: Village
+      id: 530e33ccbcbc57f1066bbff9
+  - name: Summer Camp
+    id: 52e81612bcbc57f1066b7a10
+    emoji: 🏕
+  - name: Trail
+    id: 4bf58dd8d48988d159941735
+  - name: Tree
+    id: 52e81612bcbc57f1066b7a24
+    emoji: 🌲
+  - name: Vineyard
+    id: 4bf58dd8d48988d1de941735
+  - name: Volcano
+    id: 5032848691d4c4b30a586d61
+    emoji: 🌋
+  - name: Waterfall
+    id: 56aa371be4b08b9a8d573560
+  - name: Waterfront
+    id: 56aa371be4b08b9a8d5734c3
+  - name: Well
+    id: 4fbc1be21983fc883593e321
+  - name: Windmill
+    id: 5bae9231bedf3950379f89c7
+- name: Professional & Other Places
+  id: 4d4b7105d754a06375d81259
+  emoji: 🏢
+  categories:
+  - name: Animal Shelter
+    id: 4e52d2d203646f7c19daa8ae
+  - name: Art Studio
+    id: 58daa1558bbb0b01f18ec1d6
+  - name: Auditorium
+    id: 4bf58dd8d48988d173941735
+  - name: Ballroom
+    id: 56aa371be4b08b9a8d5734cf
+  - name: Building
+    id: 4bf58dd8d48988d130941735
+  - name: Business Center
+    id: 56aa371be4b08b9a8d573517
+  - name: Cidery
+    id: 5e189fd6eee47d000759bbfd
+  - name: Club House
+    id: 52e81612bcbc57f1066b7a35
+  - name: Community Center
+    id: 52e81612bcbc57f1066b7a34
+  - name: Convention Center
+    id: 4bf58dd8d48988d1ff931735
+    categories:
+    - name: Meeting Room
+      id: 4bf58dd8d48988d100941735
+  - name: Cultural Center
+    id: 52e81612bcbc57f1066b7a32
+  - name: Distillery
+    id: 4e0e22f5a56208c4ea9a85a0
+  - name: Distribution Center
+    id: 52e81612bcbc57f1066b7a37
+  - name: Event Space
+    id: 4bf58dd8d48988d171941735
+    categories:
+    - name: Outdoor Event Space
+      id: 56aa371be4b08b9a8d57356a
+  - name: Factory
+    id: 4eb1bea83b7b6f98df247e06
+    emoji: 🏭
+  - name: Fair
+    id: 4eb1daf44b900d56c88a4600
+  - name: Funeral Home
+    id: 4f4534884b9074f6e4fb0174
+    emoji: ⚱
+  - name: Government Building
+    id: 4bf58dd8d48988d126941735
+    categories:
+    - name: Capitol Building
+      id: 4bf58dd8d48988d12a941735
+    - name: City Hall
+      id: 4bf58dd8d48988d129941735
+    - name: Courthouse
+      id: 4bf58dd8d48988d12b941735
+    - name: Embassy / Consulate
+      id: 4bf58dd8d48988d12c951735
+    - name: Fire Station
+      id: 4bf58dd8d48988d12c941735
+      emoji: 🚒
+    - name: Monument / Landmark
+      id: 4bf58dd8d48988d12d941735
+    - name: Police Station
+      id: 4bf58dd8d48988d12e941735
+      emoji: 👮
+    - name: Town Hall
+      id: 52e81612bcbc57f1066b7a38
+  - name: Industrial Estate
+    id: 56aa371be4b08b9a8d5734d7
+  - name: Library
+    id: 4bf58dd8d48988d12f941735
+    emoji: 📚
+  - name: Meadery
+    id: 5e189d71eee47d000759b7e2
+  - name: Medical Center
+    id: 4bf58dd8d48988d104941735
+    emoji: ⚕
+    categories:
+    - name: Acupuncturist
+      id: 52e81612bcbc57f1066b7a3b
+    - name: Alternative Healer
+      id: 52e81612bcbc57f1066b7a3c
+    - name: Blood Donation Center
+      id: 5f2c43a65b4c177b9a6dcc62
+      emoji: 🩸
+    - name: Chiropractor
+      id: 52e81612bcbc57f1066b7a3a
+    - name: Dentist's Office
+      id: 4bf58dd8d48988d178941735
+      emoji: 🦷
+    - name: Doctor's Office
+      id: 4bf58dd8d48988d177941735
+    - name: Emergency Room
+      id: 4bf58dd8d48988d194941735
+    - name: Eye Doctor
+      id: 522e32fae4b09b556e370f19
+      emoji: 👓
+    - name: Hospice
+      id: 5f2c5b8b5b4c177b9a6ddf0b
+    - name: Hospital
+      id: 4bf58dd8d48988d196941735
+      categories:
+      - name: Hospital Ward
+        id: 58daa1558bbb0b01f18ec1f7
+    - name: Maternity Clinic
+      id: 56aa371be4b08b9a8d5734ff
+    - name: Medical Lab
+      id: 4f4531b14b9074f6e4fb0103
+    - name: Mental Health Office
+      id: 52e81612bcbc57f1066b7a39
+    - name: Nutritionist
+      id: 58daa1558bbb0b01f18ec1d0
+    - name: Physical Therapist
+      id: 5744ccdfe4b0c0459246b4af
+    - name: Rehab Center
+      id: 56aa371be4b08b9a8d57351d
+    - name: Urgent Care Center
+      id: 56aa371be4b08b9a8d573526
+    - name: Veterinarian
+      id: 4d954af4a243a5684765b473
+  - name: Military Base
+    id: 4e52adeebd41615f56317744
+    emoji: 🪖
+  - name: Non-Profit
+    id: 50328a8e91d4c4b30a586d6c
+  - name: Observatory
+    id: 5744ccdfe4b0c0459246b4d9
+    emoji: 🔭
+  - name: Office
+    id: 4bf58dd8d48988d124941735
+    categories:
+    - name: Advertising Agency
+      id: 52e81612bcbc57f1066b7a3d
+    - name: Campaign Office
+      id: 5032764e91d4c4b30a586d5a
+    - name: Conference Room
+      id: 4bf58dd8d48988d127941735
+    - name: Corporate Amenity
+      id: 5665ef1d498ec706735f0e59
+    - name: Corporate Cafeteria
+      id: 54f4ba06498e2cf5561da814
+    - name: Corporate Coffee Shop
+      id: 5665c7b9498e7d8a4f2c0f06
+    - name: Coworking Space
+      id: 4bf58dd8d48988d174941735
+    - name: Tech Startup
+      id: 4bf58dd8d48988d125941735
+  - name: Parking
+    id: 4c38df4de52ce0d596b336e1
+    emoji: 🅿
+  - name: Post Office
+    id: 4bf58dd8d48988d172941735
+    emoji: 📯
+  - name: Power Plant
+    id: 58daa1548bbb0b01f18ec1a9
+    emoji: 🏭
+  - name: Prison
+    id: 5310b8e5bcbc57f1066bcbf1
+  - name: Radio Station
+    id: 5032856091d4c4b30a586d63
+  - name: Recruiting Agency
+    id: 52f2ab2ebcbc57f1066b8b57
+  - name: Research Laboratory
+    id: 5744ccdfe4b0c0459246b4d6
+  - name: Research Station
+    id: 58daa1558bbb0b01f18ec1b2
+  - name: School
+    id: 4bf58dd8d48988d13b941735
+    emoji: 🏫
+    categories:
+    - name: Adult Education Center
+      id: 56aa371ce4b08b9a8d573570
+    - name: Circus School
+      id: 52e81612bcbc57f1066b7a43
+    - name: Cooking School
+      id: 58daa1558bbb0b01f18ec200
+    - name: Driving School
+      id: 52e81612bcbc57f1066b7a42
+    - name: Elementary School
+      id: 4f4533804b9074f6e4fb0105
+    - name: Flight School
+      id: 52e81612bcbc57f1066b7a49
+    - name: High School
+      id: 4bf58dd8d48988d13d941735
+    - name: Language School
+      id: 52e81612bcbc57f1066b7a48
+    - name: Middle School
+      id: 4f4533814b9074f6e4fb0106
+    - name: Music School
+      id: 4f04b10d2fb6e1c99f3db0be
+    - name: Nursery School
+      id: 4f4533814b9074f6e4fb0107
+    - name: Preschool
+      id: 52e81612bcbc57f1066b7a45
+    - name: Private School
+      id: 52e81612bcbc57f1066b7a46
+    - name: Religious School
+      id: 52e81612bcbc57f1066b7a47
+    - name: Swim School
+      id: 52e81612bcbc57f1066b7a44
+  - name: Social Club
+    id: 52e81612bcbc57f1066b7a33
+    categories:
+    - name: Veterans' Organization
+      id: 5f2c5de85b4c177b9a6de29c
+  - name: Spiritual Center
+    id: 4bf58dd8d48988d131941735
+    emoji: 🙏
+    categories:
+    - name: Buddhist Temple
+      id: 52e81612bcbc57f1066b7a3e
+    - name: Cemevi
+      id: 58daa1558bbb0b01f18ec1eb
+    - name: Church
+      id: 4bf58dd8d48988d132941735
+    - name: Confucian Temple
+      id: 56aa371be4b08b9a8d5734fc
+    - name: Hindu Temple
+      id: 52e81612bcbc57f1066b7a3f
+    - name: Kingdom Hall
+      id: 5744ccdfe4b0c0459246b4ac
+    - name: Monastery
+      id: 52e81612bcbc57f1066b7a40
+    - name: Mosque
+      id: 4bf58dd8d48988d138941735
+    - name: Prayer Room
+      id: 52e81612bcbc57f1066b7a41
+    - name: Shrine
+      id: 4eb1d80a4b900d56c88a45ff
+    - name: Sikh Temple
+      id: 5bae9231bedf3950379f89c9
+    - name: Synagogue
+      id: 4bf58dd8d48988d139941735
+    - name: Temple
+      id: 4bf58dd8d48988d13a941735
+    - name: Terreiro
+      id: 56aa371be4b08b9a8d5734f6
+  - name: TV Station
+    id: 52e81612bcbc57f1066b7a31
+    emoji: 📺
+  - name: Voting Booth
+    id: 4cae28ecbf23941eb1190695
+  - name: Warehouse
+    id: 52e81612bcbc57f1066b7a36
+  - name: Waste Facility
+    id: 58daa1558bbb0b01f18ec1ac
+  - name: Wedding Hall
+    id: 56aa371be4b08b9a8d5734c5
+    emoji: 💒
+  - name: Winery
+    id: 4bf58dd8d48988d14b941735
+    emoji: 🍷
+- name: Residence
+  id: 4e67e38e036454776db1fb3a
+  emoji: 🏡
+  categories:
+  - name: Assisted Living
+    id: 5032891291d4c4b30a586d68
+  - name: Home (private)
+    id: 4bf58dd8d48988d103941735
+  - name: Housing Development
+    id: 4f2a210c4b9023bd5841ed28
+  - name: Residential Building (Apartment / Condo)
+    id: 4d954b06a243a5684965b473
+  - name: Trailer Park
+    id: 52f2ab2ebcbc57f1066b8b55
+- name: Shop & Service
+  id: 4d4b7105d754a06378d81259
+  emoji: 🛒
+  categories:
+  - name: ATM
+    id: 52f2ab2ebcbc57f1066b8b56
+    emoji: 💰
+  - name: Adult Boutique
+    id: 5267e446e4b0ec79466e48c4
+  - name: Antique Shop
+    id: 4bf58dd8d48988d116951735
+  - name: Arts & Crafts Store
+    id: 4bf58dd8d48988d127951735
+  - name: Astrologer
+    id: 52f2ab2ebcbc57f1066b8b43
+  - name: Auto Dealership
+    id: 4eb1c1623b7b52c0e1adc2ec
+    emoji: 🚙
+    categories:
+    - name: New Auto Dealership
+      id: 5e8f50bd03c7a9000c1e2fbc
+    - name: Used Auto Dealership
+      id: 5e8f501a03c7a9000c1e2e88
+  - name: Auto Garage
+    id: 52f2ab2ebcbc57f1066b8b44
+    emoji: 🔧
+  - name: Auto Workshop
+    id: 56aa371be4b08b9a8d5734d3
+    emoji: 🔧
+  - name: Automotive Shop
+    id: 4bf58dd8d48988d124951735
+  - name: Baby Store
+    id: 52f2ab2ebcbc57f1066b8b32
+  - name: Bank
+    id: 4bf58dd8d48988d10a951735
+    emoji: 💰
+  - name: Bath House
+    id: 52e81612bcbc57f1066b7a27
+  - name: Batik Shop
+    id: 56aa371be4b08b9a8d5734cb
+  - name: Betting Shop
+    id: 52f2ab2ebcbc57f1066b8b40
+  - name: Big Box Store
+    id: 52f2ab2ebcbc57f1066b8b42
+  - name: Bike Shop
+    id: 4bf58dd8d48988d115951735
+    emoji: 🚴
+  - name: Board Shop
+    id: 4bf58dd8d48988d1f1941735
+  - name: Bookstore
+    id: 4bf58dd8d48988d114951735
+    emoji: 📚
+  - name: Bridal Shop
+    id: 4bf58dd8d48988d11a951735
+  - name: Business Service
+    id: 5453de49498eade8af355881
+  - name: Camera Store
+    id: 4eb1bdf03b7b55596b4a7491
+  - name: Candy Store
+    id: 4bf58dd8d48988d117951735
+  - name: Car Wash
+    id: 4f04ae1f2fb6e1c99f3db0ba
+    emoji: 🚙
+  - name: Carpet Store
+    id: 52f2ab2ebcbc57f1066b8b2a
+  - name: Check Cashing Service
+    id: 52f2ab2ebcbc57f1066b8b2d
+  - name: Child Care Service
+    id: 5744ccdfe4b0c0459246b4c7
+    emoji: 🚸
+    categories:
+    - name: Daycare
+      id: 4f4532974b9074f6e4fb0104
+  - name: Chocolate Shop
+    id: 52f2ab2ebcbc57f1066b8b31
+  - name: Clothing Store
+    id: 4bf58dd8d48988d103951735
+    emoji: 👗
+    categories:
+    - name: Accessories Store
+      id: 4bf58dd8d48988d102951735
+    - name: Boutique
+      id: 4bf58dd8d48988d104951735
+    - name: Kids Store
+      id: 4bf58dd8d48988d105951735
+    - name: Lingerie Store
+      id: 4bf58dd8d48988d109951735
+    - name: Men's Store
+      id: 4bf58dd8d48988d106951735
+    - name: Shoe Store
+      id: 4bf58dd8d48988d107951735
+    - name: Women's Store
+      id: 4bf58dd8d48988d108951735
+  - name: Comic Shop
+    id: 52f2ab2ebcbc57f1066b8b18
+  - name: Construction & Landscaping
+    id: 5454144b498ec1f095bff2f2
+    emoji: 🏗
+  - name: Convenience Store
+    id: 4d954b0ea243a5684a65b473
+  - name: Cosmetics Shop
+    id: 4bf58dd8d48988d10c951735
+  - name: Costume Shop
+    id: 52f2ab2ebcbc57f1066b8b17
+  - name: Credit Union
+    id: 5032850891d4c4b30a586d62
+  - name: Currency Exchange
+    id: 5744ccdfe4b0c0459246b4be
+    emoji: 💱
+  - name: Department Store
+    id: 4bf58dd8d48988d1f6941735
+  - name: Design Studio
+    id: 4bf58dd8d48988d1f4941735
+  - name: Discount Store
+    id: 52dea92d3cf9994f4e043dbb
+  - name: Dive Shop
+    id: 52f2ab2ebcbc57f1066b8b1a
+  - name: Drugstore
+    id: 5745c2e4498e11e7bccabdbd
+    emoji: 💊
+  - name: Dry Cleaner
+    id: 52f2ab2ebcbc57f1066b8b1d
+  - name: EV Charging Station
+    id: 5032872391d4c4b30a586d64
+    emoji: 🔌
+  - name: Electronics Store
+    id: 4bf58dd8d48988d122951735
+  - name: Entertainment Service
+    id: 56aa371be4b08b9a8d573554
+  - name: Event Service
+    id: 5454152e498ef71e2b9132c6
+  - name: Fabric Shop
+    id: 52f2ab2ebcbc57f1066b8b26
+  - name: Film Studio
+    id: 56aa371be4b08b9a8d573523
+  - name: Financial or Legal Service
+    id: 503287a291d4c4b30a586d65
+  - name: Fireworks Store
+    id: 52f2ab2ebcbc57f1066b8b3a
+  - name: Fishing Store
+    id: 52f2ab2ebcbc57f1066b8b16
+  - name: Flea Market
+    id: 4bf58dd8d48988d1f7941735
+  - name: Floating Market
+    id: 56aa371be4b08b9a8d573505
+  - name: Flower Shop
+    id: 4bf58dd8d48988d11b951735
+    emoji: 💐
+  - name: Food & Drink Shop
+    id: 4bf58dd8d48988d1f9941735
+    categories:
+    - name: Beer Store
+      id: 5370f356bcbc57f1066c94c2
+    - name: Butcher
+      id: 4bf58dd8d48988d11d951735
+    - name: Cheese Shop
+      id: 4bf58dd8d48988d11e951735
+    - name: Coffee Roaster
+      id: 5e18993feee47d000759b256
+      emoji: ☕
+    - name: Dairy Store
+      id: 58daa1558bbb0b01f18ec1ca
+    - name: Farmers Market
+      id: 4bf58dd8d48988d1fa941735
+    - name: Fish Market
+      id: 4bf58dd8d48988d10e951735
+    - name: Food Service
+      id: 56aa371be4b08b9a8d573550
+    - name: Gourmet Shop
+      id: 4bf58dd8d48988d1f5941735
+    - name: Grocery Store
+      id: 4bf58dd8d48988d118951735
+    - name: Health Food Store
+      id: 50aa9e744b90af0d42d5de0e
+    - name: Imported Food Shop
+      id: 5f2c41945b4c177b9a6dc7d6
+    - name: Kuruyemişçi
+      id: 58daa1558bbb0b01f18ec1e8
+    - name: Liquor Store
+      id: 4bf58dd8d48988d186941735
+    - name: Organic Grocery
+      id: 52f2ab2ebcbc57f1066b8b45
+    - name: Sausage Shop
+      id: 56aa371be4b08b9a8d573564
+    - name: Street Food Gathering
+      id: 53e0feef498e5aac066fd8a9
+    - name: Supermarket
+      id: 52f2ab2ebcbc57f1066b8b46
+    - name: Turşucu
+      id: 58daa1558bbb0b01f18ec1e5
+    - name: Wine Shop
+      id: 4bf58dd8d48988d119951735
+      emoji: 🍷
+  - name: Frame Store
+    id: 52f2ab2ebcbc57f1066b8b24
+  - name: Fruit & Vegetable Store
+    id: 52f2ab2ebcbc57f1066b8b1c
+    emoji: 🍎
+  - name: Furniture / Home Store
+    id: 4bf58dd8d48988d1f8941735
+    emoji: 🛋
+    categories:
+    - name: Lighting Store
+      id: 55888a5a498e782e3303b43a
+  - name: Gaming Cafe
+    id: 4bf58dd8d48988d18d941735
+  - name: Garden Center
+    id: 4eb1c0253b7b52c0e1adc2e9
+  - name: Gas Station
+    id: 4bf58dd8d48988d113951735
+    emoji: ⛽
+  - name: Gift Shop
+    id: 4bf58dd8d48988d128951735
+  - name: Gun Shop
+    id: 52f2ab2ebcbc57f1066b8b19
+  - name: Hardware Store
+    id: 4bf58dd8d48988d112951735
+  - name: Health & Beauty Service
+    id: 54541900498ea6ccd0202697
+  - name: Herbs & Spices Store
+    id: 52f2ab2ebcbc57f1066b8b2c
+  - name: Hobby Shop
+    id: 4bf58dd8d48988d1fb941735
+  - name: Home Service
+    id: 545419b1498ea6ccd0202f58
+  - name: Hunting Supply
+    id: 50aaa5234b90af0d42d5de12
+  - name: IT Services
+    id: 52f2ab2ebcbc57f1066b8b36
+  - name: Insurance Office
+    id: 58daa1558bbb0b01f18ec1f1
+  - name: Internet Cafe
+    id: 4bf58dd8d48988d1f0941735
+  - name: Jewelry Store
+    id: 4bf58dd8d48988d111951735
+  - name: Kitchen Supply Store
+    id: 58daa1558bbb0b01f18ec1b4
+  - name: Knitting Store
+    id: 52f2ab2ebcbc57f1066b8b25
+  - name: Laundromat
+    id: 52f2ab2ebcbc57f1066b8b33
+    emoji: 👕
+  - name: Laundry Service
+    id: 4bf58dd8d48988d1fc941735
+    emoji: 👕
+  - name: Lawyer
+    id: 52f2ab2ebcbc57f1066b8b3f
+  - name: Leather Goods Store
+    id: 52f2ab2ebcbc57f1066b8b2b
+  - name: Locksmith
+    id: 52f2ab2ebcbc57f1066b8b1e
+    emoji: 🔐
+  - name: Lottery Retailer
+    id: 52f2ab2ebcbc57f1066b8b38
+  - name: Luggage Store
+    id: 52f2ab2ebcbc57f1066b8b29
+  - name: Marijuana Dispensary
+    id: 52c71aaf3cf9994f4e043d17
+    emoji: 😎
+  - name: Market
+    id: 50be8ee891d4fa8dcc7199a7
+  - name: Massage Studio
+    id: 52f2ab2ebcbc57f1066b8b3c
+  - name: Mattress Store
+    id: 52f2ab2ebcbc57f1066b8b27
+  - name: Medical Supply Store
+    id: 58daa1558bbb0b01f18ec206
+    emoji: 💊
+  - name: Miscellaneous Shop
+    id: 4bf58dd8d48988d1ff941735
+  - name: Mobile Phone Shop
+    id: 4f04afc02fb6e1c99f3db0bc
+  - name: Mobility Store
+    id: 56aa371be4b08b9a8d57354a
+  - name: Motorcycle Shop
+    id: 5032833091d4c4b30a586d60
+  - name: Motorsports Shop
+    id: 59d79d6b2e268052fa2a3332
+  - name: Music Store
+    id: 4bf58dd8d48988d1fe941735
+    emoji: 💿
+  - name: Nail Salon
+    id: 4f04aa0c2fb6e1c99f3db0b8
+  - name: Newsagent
+    id: 5f2c5a295b4c177b9a6ddd0e
+    emoji: 📰
+  - name: Newsstand
+    id: 4f04ad622fb6e1c99f3db0b9
+    emoji: 📰
+  - name: Notary
+    id: 5ae95d208a6f17002ce792b2
+  - name: Optical Shop
+    id: 4d954afda243a5684865b473
+  - name: Other Repair Shop
+    id: 52f2ab2ebcbc57f1066b8b2f
+  - name: Outdoor Supply Store
+    id: 52f2ab2ebcbc57f1066b8b22
+  - name: Outlet Mall
+    id: 5744ccdfe4b0c0459246b4df
+  - name: Outlet Store
+    id: 52f2ab2ebcbc57f1066b8b35
+  - name: Paper / Office Supplies Store
+    id: 4bf58dd8d48988d121951735
+  - name: Pawn Shop
+    id: 52f2ab2ebcbc57f1066b8b34
+  - name: Perfume Shop
+    id: 52f2ab2ebcbc57f1066b8b23
+  - name: Pet Service
+    id: 5032897c91d4c4b30a586d69
+  - name: Pet Store
+    id: 4bf58dd8d48988d100951735
+  - name: Pharmacy
+    id: 4bf58dd8d48988d10f951735
+    emoji: 💊
+  - name: Photography Lab
+    id: 4eb1bdde3b7b55596b4a7490
+  - name: Photography Studio
+    id: 554a5e17498efabeda6cc559
+  - name: Piercing Parlor
+    id: 52f2ab2ebcbc57f1066b8b20
+  - name: Pop-Up Shop
+    id: 52f2ab2ebcbc57f1066b8b3d
+  - name: Print Shop
+    id: 52f2ab2ebcbc57f1066b8b28
+  - name: Public Bathroom
+    id: 5744ccdfe4b0c0459246b4c4
+  - name: Real Estate Office
+    id: 5032885091d4c4b30a586d66
+  - name: Record Shop
+    id: 4bf58dd8d48988d10d951735
+  - name: Recording Studio
+    id: 52f2ab2ebcbc57f1066b8b37
+  - name: Recycling Facility
+    id: 4f4531084b9074f6e4fb0101
+    emoji: ♻
+  - name: Rental Service
+    id: 56aa371be4b08b9a8d573552
+  - name: Salon / Barbershop
+    id: 4bf58dd8d48988d110951735
+  - name: Sauna / Steam Room
+    id: 58daa1558bbb0b01f18ec1ae
+  - name: Shipping Store
+    id: 52f2ab2ebcbc57f1066b8b1f
+  - name: Shoe Repair
+    id: 52f2ab2ebcbc57f1066b8b39
+  - name: Shopping Mall
+    id: 4bf58dd8d48988d1fd941735
+    emoji: 🛍
+  - name: Shopping Plaza
+    id: 5744ccdfe4b0c0459246b4dc
+    emoji: 🛍
+  - name: Skate Shop
+    id: 5bae9231bedf3950379f89d2
+  - name: Ski Shop
+    id: 56aa371be4b08b9a8d573566
+  - name: Smoke Shop
+    id: 4bf58dd8d48988d123951735
+  - name: Smoothie Shop
+    id: 52f2ab2ebcbc57f1066b8b41
+  - name: Souvenir Shop
+    id: 52f2ab2ebcbc57f1066b8b1b
+  - name: Spa
+    id: 4bf58dd8d48988d1ed941735
+  - name: Sporting Goods Shop
+    id: 4bf58dd8d48988d1f2941735
+  - name: Stationery Store
+    id: 52f2ab2ebcbc57f1066b8b21
+  - name: Storage Facility
+    id: 4f04b1572fb6e1c99f3db0bf
+  - name: Supplement Shop
+    id: 5744ccdfe4b0c0459246b4cd
+  - name: Tailor Shop
+    id: 5032781d91d4c4b30a586d5b
+  - name: Tanning Salon
+    id: 4d1cf8421a97d635ce361c31
+  - name: Tattoo Parlor
+    id: 4bf58dd8d48988d1de931735
+  - name: Thrift / Vintage Store
+    id: 4bf58dd8d48988d101951735
+  - name: Toy / Game Store
+    id: 4bf58dd8d48988d1f3941735
+  - name: Travel Agency
+    id: 4f04b08c2fb6e1c99f3db0bd
+  - name: Used Bookstore
+    id: 52f2ab2ebcbc57f1066b8b30
+    emoji: 📚
+  - name: Vape Store
+    id: 56aa371be4b08b9a8d57355c
+  - name: Vehicle Inspection Station
+    id: 5f2c1e0db6d05514c70436d4
+    emoji: 🔧
+  - name: Video Game Store
+    id: 4bf58dd8d48988d10b951735
+  - name: Video Store
+    id: 4bf58dd8d48988d126951735
+  - name: Warehouse Store
+    id: 52e816a6bcbc57f1066b7a54
+  - name: Watch Shop
+    id: 52f2ab2ebcbc57f1066b8b2e
+- name: Travel & Transport
+  id: 4d4b7105d754a06379d81259
+  emoji: 🚃
+  categories:
+  - name: Airport
+    id: 4bf58dd8d48988d1ed931735
+    emoji: ✈
+    categories:
+    - name: Airfield
+      id: 5f2c42335b4c177b9a6dc927
+    - name: Airport Food Court
+      id: 4bf58dd8d48988d1ef931735
+    - name: Airport Gate
+      id: 4bf58dd8d48988d1f0931735
+    - name: Airport Lounge
+      id: 4eb1bc533b7b2c5b1d4306cb
+    - name: Airport Service
+      id: 56aa371be4b08b9a8d57352f
+    - name: Airport Terminal
+      id: 4bf58dd8d48988d1eb931735
+    - name: Airport Tram
+      id: 4bf58dd8d48988d1ec931735
+    - name: Baggage Claim
+      id: 5744ccdfe4b0c0459246b4e5
+    - name: Plane
+      id: 4bf58dd8d48988d1f7931735
+  - name: Baggage Locker
+    id: 5744ccdfe4b0c0459246b4e8
+    emoji: 🧳
+  - name: Bike Rental / Bike Share
+    id: 4e4c9077bd41f78e849722f9
+    emoji: 🚴
+  - name: Boat Rental
+    id: 5744ccdfe4b0c0459246b4c1
+    emoji: ⛵
+  - name: Boat or Ferry
+    id: 4bf58dd8d48988d12d951735
+    emoji: ⛴
+  - name: Border Crossing
+    id: 52f2ab2ebcbc57f1066b8b4b
+  - name: Bus Station
+    id: 4bf58dd8d48988d1fe931735
+    emoji: 🚌
+    categories:
+    - name: Bus Line
+      id: 4bf58dd8d48988d12b951735
+  - name: Bus Stop
+    id: 52f2ab2ebcbc57f1066b8b4f
+    emoji: 🚌
+  - name: Cable Car
+    id: 52f2ab2ebcbc57f1066b8b50
+    emoji: 🚠
+  - name: Cruise Ship
+    id: 55077a22498e5e9248869ba2
+    emoji: 🛳
+  - name: Duty-free Shop
+    id: 589ddde98ae3635c072819ee
+  - name: General Travel
+    id: 4bf58dd8d48988d1f6931735
+  - name: Heliport
+    id: 56aa371ce4b08b9a8d57356e
+    emoji: 🚁
+  - name: Hotel
+    id: 4bf58dd8d48988d1fa931735
+    emoji: 🛌
+    categories:
+    - name: Bed & Breakfast
+      id: 4bf58dd8d48988d1f8931735
+    - name: Boarding House
+      id: 4f4530a74b9074f6e4fb0100
+    - name: Hostel
+      id: 4bf58dd8d48988d1ee931735
+    - name: Hotel Pool
+      id: 4bf58dd8d48988d132951735
+    - name: Inn
+      id: 5bae9231bedf3950379f89cb
+    - name: Motel
+      id: 4bf58dd8d48988d1fb931735
+    - name: Resort
+      id: 4bf58dd8d48988d12f951735
+    - name: Vacation Rental
+      id: 56aa371be4b08b9a8d5734e1
+  - name: Intersection
+    id: 52f2ab2ebcbc57f1066b8b4c
+  - name: Light Rail Station
+    id: 4bf58dd8d48988d1fc931735
+    emoji: 🚈
+  - name: Marine Terminal
+    id: 5f2c1af1b6d05514c704319d
+    emoji: ⚓
+  - name: Metro Station
+    id: 4bf58dd8d48988d1fd931735
+    emoji: 🚇
+  - name: Moving Target
+    id: 4f2a23984b9023bd5841ed2c
+  - name: Pier
+    id: 4e74f6cabd41c4836eac4c31
+    emoji: ⚓
+  - name: Port
+    id: 56aa371be4b08b9a8d57353e
+    emoji: ⚓
+  - name: RV Park
+    id: 52f2ab2ebcbc57f1066b8b53
+  - name: Rental Car Location
+    id: 4bf58dd8d48988d1ef941735
+    emoji: 🚗
+  - name: Rest Area
+    id: 4d954b16a243a5684b65b473
+  - name: Road
+    id: 4bf58dd8d48988d1f9931735
+    emoji: 🛣
+  - name: Taxi Stand
+    id: 53fca564498e1a175f32528b
+    emoji: 🚕
+  - name: Taxi
+    id: 4bf58dd8d48988d130951735
+    emoji: 🚕
+  - name: Toll Booth
+    id: 52f2ab2ebcbc57f1066b8b4d
+  - name: Toll Plaza
+    id: 52f2ab2ebcbc57f1066b8b4e
+  - name: Tourist Information Center
+    id: 4f4530164b9074f6e4fb00ff
+  - name: Train Station
+    id: 4bf58dd8d48988d129951735
+    emoji: 🚂
+    categories:
+    - name: Platform
+      id: 4f4531504b9074f6e4fb0102
+    - name: Train
+      id: 4bf58dd8d48988d12a951735
+  - name: Tram Station
+    id: 52f2ab2ebcbc57f1066b8b51
+    emoji: 🚋
+  - name: Transportation Service
+    id: 54541b70498ea6ccd0204bff
+  - name: Travel Lounge
+    id: 4f04b25d2fb6e1c99f3db0c0
+  - name: Truck Stop
+    id: 57558b36e4b065ecebd306dd
+    emoji: 🚛
+  - name: Tunnel
+    id: 52f2ab2ebcbc57f1066b8b4a
+    emoji: 🚇
