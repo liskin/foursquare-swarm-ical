@@ -55,3 +55,7 @@ jobs:
       with:
         linters: isort
         run: isort --check src/
+    - name: Check README examples
+      run: |
+        make update-readme
+        git diff --exit-code -- README.md

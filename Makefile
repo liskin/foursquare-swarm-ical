@@ -29,6 +29,10 @@ dist: $(VENV_DONE)
 twine-upload: dist
 	$(VENV_PYTHON) -m twine upload $(wildcard dist/*)
 
+.PHONY: update-readme
+update-readme: venv
+	perl -0777 -i -pe 's|(\`\`\`\n\$$ (foursquare-swarm-ical .*?--help)\n).*?(\`\`\`\n)|$$1 . `./.venv/bin/$$2` . $$3|gmse' README.md
+
 .PHONY: clean
 clean:
 	git clean -ffdX
