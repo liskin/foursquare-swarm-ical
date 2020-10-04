@@ -75,6 +75,10 @@ def parse_args() -> argparse.Namespace:
         description="Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"
     )
     parser.add_argument(
+        '--no-sync', dest='sync', action='store_false',
+        help="skip online sync, print ical from database only",
+    )
+    parser.add_argument(
         '--access-token', metavar="XXX", default=os.getenv('FOURSQUARE_TOKEN'),
         help="foursquare oauth2 access token (default: getenv('FOURSQUARE_TOKEN'))",
     )
@@ -90,9 +94,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    if not args.access_token:
-        raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
 
     with database(args.database) as db:
-        sync(db=db, access_token=args.access_token, verbose=args.verbose)
+        if args.sync:
+            if not args.access_token:
+                raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
+            sync(db=db, access_token=args.access_token, verbose=args.verbose)
+
         stdout.buffer.write(ical(db=db))

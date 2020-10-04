@@ -42,12 +42,13 @@ Parameters.
 
 ```
 $ foursquare-swarm-ical --help
-usage: foursquare-swarm-ical [-h] [--access-token XXX] [--database FILE] [-v]
+usage: foursquare-swarm-ical [-h] [--no-sync] [--access-token XXX] [--database FILE] [-v]
 
 Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar
 
 optional arguments:
   -h, --help          show this help message and exit
+  --no-sync           skip online sync, print ical from database only
   --access-token XXX  foursquare oauth2 access token (default: getenv('FOURSQUARE_TOKEN'))
   --database FILE     sqlite database file (default: checkins.sqlite)
   -v, --verbose
