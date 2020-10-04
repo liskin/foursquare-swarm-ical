@@ -66,7 +66,6 @@ def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
         ev.add('uid', checkin['id'] + "@foursquare.com")
         ev.add('url', "https://www.swarmapp.com/self/checkin/" + checkin['id'])
         ev.add('summary', prefix + " " + checkin['venue']['name'])
-        ev.add('description', "@ " + checkin['venue']['name'])
         ev.add('location', checkin['venue']['name'])
         ev.add('dtstart', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
         ev.add('dtend', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
