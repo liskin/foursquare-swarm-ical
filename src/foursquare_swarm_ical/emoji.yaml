@@ -1,7 +1,15 @@
+# Some inspiration here:
+#  https://developer.foursquare.com/docs/build-with-foursquare/categories/
+#  https://gist.github.com/rkotzy/b0ddaa4d9487697e05d86a8d5f4a6ad5
+#  https://github.com/benjbaron/trackingadvisor-backend/blob/a24fea789061f0261ce171cca4c25325da4d2da7/src/supp/personal_information_foursquare.csv
+#
+# Our focus here isn't finding the most descriptive emoji but legibility,
+# so using fewer simple emojis is preferred.
+
 categories:
 - name: Arts & Entertainment
   id: 4d4b7104d754a06370d81259
-  emoji: 😅
+  emoji: 🎟
   categories:
   - name: Amphitheater
     id: 56aa371be4b08b9a8d5734db
@@ -16,6 +24,7 @@ categories:
     id: 4bf58dd8d48988d1e4931735
   - name: Casino
     id: 4bf58dd8d48988d17c941735
+    emoji: 🃏
   - name: Circus
     id: 52e81612bcbc57f1066b79e7
     emoji: 🎪
@@ -36,11 +45,12 @@ categories:
     id: 4bf58dd8d48988d1f1931735
   - name: Go Kart Track
     id: 52e81612bcbc57f1066b79ea
-    emoji: 🏎
+    emoji: 🏁
   - name: Historic Site
     id: 4deefb944765f83613cdba6e
   - name: Karaoke Box
     id: 5744ccdfe4b0c0459246b4bb
+    emoji: 🎤
   - name: Laser Tag
     id: 52e81612bcbc57f1066b79e6
   - name: Memorial Site
@@ -201,6 +211,7 @@ categories:
     emoji: 💪
   - name: College Lab
     id: 4bf58dd8d48988d1a5941735
+    emoji: 🥼
   - name: College Library
     id: 4bf58dd8d48988d1a7941735
     emoji: 📚
@@ -256,10 +267,11 @@ categories:
     id: 4bf58dd8d48988d1ae941735
 - name: Event
   id: 4d4b7105d754a06373d81259
-  emoji: 🎉
+  emoji: 🗓
   categories:
   - name: Christmas Market
     id: 52f2ab2ebcbc57f1066b8b3b
+    emoji: 🛍
   - name: Conference
     id: 5267e4d9e4b0ec79466e48c6
   - name: Convention
@@ -496,6 +508,7 @@ categories:
     id: 4bf58dd8d48988d1df931735
   - name: Bagel Shop
     id: 4bf58dd8d48988d179941735
+    emoji: 🥯
   - name: Bakery
     id: 4bf58dd8d48988d16a941735
     emoji: 🥐
@@ -553,10 +566,12 @@ categories:
       id: 5f2c407c5b4c177b9a6dc536
     - name: Ice Cream Shop
       id: 4bf58dd8d48988d1c9941735
+      emoji: 🍦
     - name: Pastry Shop
       id: 5744ccdfe4b0c0459246b4e2
     - name: Pie Shop
       id: 52e81612bcbc57f1066b7a0a
+      emoji: 🥧
   - name: Diner
     id: 4bf58dd8d48988d147941735
   - name: Donut Shop
@@ -585,8 +600,10 @@ categories:
     id: 4bf58dd8d48988d10b941735
   - name: Fast Food Restaurant
     id: 4bf58dd8d48988d16e941735
+    emoji: 🍟
   - name: Fish & Chips Shop
     id: 4edd64a0c7ddd24ca188df1a
+    emoji: 🍟
   - name: Fondue Restaurant
     id: 52e81612bcbc57f1066b7a09
   - name: Food Court
@@ -761,6 +778,7 @@ categories:
       id: 54135bf5e4b08f3d2429dfec
   - name: Irish Pub
     id: 52e81612bcbc57f1066b7a06
+    emoji: 🍺
   - name: Italian Restaurant
     id: 4bf58dd8d48988d110941735
     categories:
@@ -975,6 +993,7 @@ categories:
     id: 4bf58dd8d48988d1c7941735
   - name: Soup Place
     id: 4bf58dd8d48988d1dd931735
+    emoji: 🥣
   - name: Southern / Soul Food Restaurant
     id: 4bf58dd8d48988d14f941735
   - name: Spanish Restaurant
@@ -992,7 +1011,7 @@ categories:
     id: 4bf58dd8d48988d158941735
   - name: Tea Room
     id: 4bf58dd8d48988d1dc931735
-    emoji: ☕
+    emoji: 🫖
   - name: Theme Restaurant
     id: 56aa371be4b08b9a8d573538
   - name: Turkish Restaurant
@@ -1045,6 +1064,7 @@ categories:
     id: 4bf58dd8d48988d14c941735
 - name: Nightlife Spot
   id: 4d4b7105d754a06376d81259
+  emoji: 🍸
   categories:
   - name: Bar
     id: 4bf58dd8d48988d116941735
@@ -1061,6 +1081,7 @@ categories:
       emoji: 🍺
     - name: Champagne Bar
       id: 52e81612bcbc57f1066b7a0e
+      emoji: 🍷
     - name: Cocktail Bar
       id: 4bf58dd8d48988d11e941735
       emoji: 🍸
@@ -1077,6 +1098,7 @@ categories:
       id: 5f2c40f15b4c177b9a6dc684
     - name: Karaoke Bar
       id: 4bf58dd8d48988d120941735
+      emoji: 🎤
     - name: Pub
       id: 4bf58dd8d48988d11b941735
       emoji: 🍺
@@ -1133,8 +1155,10 @@ categories:
       id: 56aa371be4b08b9a8d57351a
     - name: Golf Course
       id: 4bf58dd8d48988d1e6941735
+      emoji: ⛳
     - name: Golf Driving Range
       id: 58daa1558bbb0b01f18ec1b0
+      emoji: ⛳
     - name: Gym / Fitness Center
       id: 4bf58dd8d48988d175941735
       emoji: 💪
@@ -1145,6 +1169,7 @@ categories:
         id: 503289d391d4c4b30a586d6a
       - name: Cycle Studio
         id: 52f2ab2ebcbc57f1066b8b49
+        emoji: 🚴
       - name: Gym Pool
         id: 4bf58dd8d48988d105941735
       - name: Gymnastics Gym
@@ -1196,6 +1221,7 @@ categories:
     id: 52e81612bcbc57f1066b7a28
   - name: Bay
     id: 56aa371be4b08b9a8d573544
+    emoji: ⚓
   - name: Beach
     id: 4bf58dd8d48988d1e2941735
     emoji: 🏖
@@ -1246,8 +1272,10 @@ categories:
     id: 4bf58dd8d48988d15a941735
   - name: Gun Range
     id: 52e81612bcbc57f1066b7a11
+    emoji: 🔫
   - name: Harbor / Marina
     id: 4bf58dd8d48988d1e0941735
+    emoji: ⚓
   - name: Hill
     id: 5bae9231bedf3950379f89cd
     emoji: ⛰
@@ -1283,6 +1311,7 @@ categories:
     id: 4bf58dd8d48988d1e7941735
   - name: Plaza
     id: 4bf58dd8d48988d164941735
+    emoji: ⛲
   - name: Pool
     id: 4bf58dd8d48988d15e941735
     emoji: 🏊
@@ -1437,7 +1466,7 @@ categories:
     id: 5e189d71eee47d000759b7e2
   - name: Medical Center
     id: 4bf58dd8d48988d104941735
-    emoji: ⚕
+    emoji: ⛑
     categories:
     - name: Acupuncturist
       id: 52e81612bcbc57f1066b7a3b
@@ -1448,13 +1477,16 @@ categories:
       emoji: 🩸
     - name: Chiropractor
       id: 52e81612bcbc57f1066b7a3a
+      emoji: 🩺
     - name: Dentist's Office
       id: 4bf58dd8d48988d178941735
       emoji: 🦷
     - name: Doctor's Office
       id: 4bf58dd8d48988d177941735
+      emoji: 🩺
     - name: Emergency Room
       id: 4bf58dd8d48988d194941735
+      emoji: 🚑
     - name: Eye Doctor
       id: 522e32fae4b09b556e370f19
       emoji: 👓
@@ -1469,6 +1501,7 @@ categories:
       id: 56aa371be4b08b9a8d5734ff
     - name: Medical Lab
       id: 4f4531b14b9074f6e4fb0103
+      emoji: 🥼
     - name: Mental Health Office
       id: 52e81612bcbc57f1066b7a39
     - name: Nutritionist
@@ -1479,6 +1512,7 @@ categories:
       id: 56aa371be4b08b9a8d57351d
     - name: Urgent Care Center
       id: 56aa371be4b08b9a8d573526
+      emoji: 🚑
     - name: Veterinarian
       id: 4d954af4a243a5684765b473
   - name: Military Base
@@ -1658,6 +1692,7 @@ categories:
     emoji: 🔧
   - name: Automotive Shop
     id: 4bf58dd8d48988d124951735
+    emoji: 🚙
   - name: Baby Store
     id: 52f2ab2ebcbc57f1066b8b32
   - name: Bank
@@ -1733,6 +1768,7 @@ categories:
     id: 52f2ab2ebcbc57f1066b8b17
   - name: Credit Union
     id: 5032850891d4c4b30a586d62
+    emoji: 💰
   - name: Currency Exchange
     id: 5744ccdfe4b0c0459246b4be
     emoji: 💱
@@ -1842,6 +1878,7 @@ categories:
     id: 4bf58dd8d48988d128951735
   - name: Gun Shop
     id: 52f2ab2ebcbc57f1066b8b19
+    emoji: 🔫
   - name: Hardware Store
     id: 4bf58dd8d48988d112951735
   - name: Health & Beauty Service
@@ -1903,8 +1940,10 @@ categories:
     id: 56aa371be4b08b9a8d57354a
   - name: Motorcycle Shop
     id: 5032833091d4c4b30a586d60
+    emoji: 🏍
   - name: Motorsports Shop
     id: 59d79d6b2e268052fa2a3332
+    emoji: 🚙
   - name: Music Store
     id: 4bf58dd8d48988d1fe941735
     emoji: 💿
@@ -1953,6 +1992,7 @@ categories:
     id: 52f2ab2ebcbc57f1066b8b28
   - name: Public Bathroom
     id: 5744ccdfe4b0c0459246b4c4
+    emoji: 🚽
   - name: Real Estate Office
     id: 5032885091d4c4b30a586d66
   - name: Record Shop
@@ -2050,6 +2090,7 @@ categories:
       id: 4bf58dd8d48988d1ec931735
     - name: Baggage Claim
       id: 5744ccdfe4b0c0459246b4e5
+      emoji: 🧳
     - name: Plane
       id: 4bf58dd8d48988d1f7931735
   - name: Baggage Locker
@@ -2066,6 +2107,7 @@ categories:
     emoji: ⛴
   - name: Border Crossing
     id: 52f2ab2ebcbc57f1066b8b4b
+    emoji: 🚧
   - name: Bus Station
     id: 4bf58dd8d48988d1fe931735
     emoji: 🚌
@@ -2083,6 +2125,7 @@ categories:
     emoji: 🛳
   - name: Duty-free Shop
     id: 589ddde98ae3635c072819ee
+    emoji: 🛍
   - name: General Travel
     id: 4bf58dd8d48988d1f6931735
   - name: Heliport
@@ -2129,9 +2172,10 @@ categories:
     emoji: ⚓
   - name: RV Park
     id: 52f2ab2ebcbc57f1066b8b53
+    emoji: 🏕
   - name: Rental Car Location
     id: 4bf58dd8d48988d1ef941735
-    emoji: 🚗
+    emoji: 🚙
   - name: Rest Area
     id: 4d954b16a243a5684b65b473
   - name: Road

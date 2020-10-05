@@ -2,12 +2,6 @@ from foursquare import Foursquare  # type: ignore [import]
 from pkg_resources import resource_stream
 import yaml
 
-# Some inspiration here:
-#  https://gist.github.com/rkotzy/b0ddaa4d9487697e05d86a8d5f4a6ad5
-#  https://github.com/benjbaron/trackingadvisor-backend/blob/a24fea789061f0261ce171cca4c25325da4d2da7/src/supp/personal_information_foursquare.csv
-# Our focus here isn't finding the most descriptive emoji but legibility,
-# so using fewer simple emojis is preferred.
-
 
 def make_venues_yaml(access_token: str) -> None:
     client = Foursquare(access_token=access_token)
