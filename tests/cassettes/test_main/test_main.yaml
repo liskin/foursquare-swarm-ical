@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body:
+    headers:
+    method: GET
+    uri: https://api.foursquare.com/v2/users/self/checkins?limit=250&offset=0&v=20200130&oauth_token=TEST
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9VWy47bNhTd9ysILdqNY1MS9ZpNMRkEaJFkGnSSLCYYBBRJ2YRlUiEpe5zAf9Af
+        SHez7CLoR7jzX72U5LFnJimS9AF0Kd7Lc899HfFdsBCOBkfvAqa5CI4ijEeBEW9aYd2PPDgKkqpI
+        ccyirIxplMdRHtEc0yoPNqNAaScryaiTWtng6NW7wK0bALlleG7oOhgF0omFD9MqIyg/0a1ywVFY
+        bDYXPp5tAEF0NGaCzaWH85Q6r7i/3UeQHSlBEqCUh2lURgxjnGcFEWkGcRjAO8GPPXoCDjHGWTTa
+        ERvQwc/JhTjXSvxUVVaAcwp5L4VqOxJ9EEajqKJhRcokSjCOGIuLsCRwWdGFR3uBXtLrK6muf/eB
+        tXKUOX+9mQEw2LOMRGESkRjMlTYL6oDZs70RgRUNZspEqfUcDCGJwzyJIoJJkqVpfmB9YYUZYrdL
+        aqVqD4ynd0mhB4gZWjlUCmHQt6jSmvu21brvjKdKOYfqQ2mDx9rV26vr93a+vUIFziYkBPCaQkak
+        GEc4I2kWF0WYxThLwaCmUOF0nOIoCtM0DUOCw8hfKEUt+BPqnqhp37LuCCJwaZu6G4YvRPUz0mjr
+        aH3SDWkAZoSxLzqDr5Nz3xIhp7NSm5lP8ih4KZbi+v32g/eRbg0nD43S8AUozkOc6dbN0FNt6FJS
+        hX4WU1+RUT9zxl84eSvYDAxNW9aSHbbweFe0V5+oWs8PDSH/+EV0ZtNDzWlwAV2AHoipNlIcznVK
+        aZyFTJAS52VBc55kcZKy/cg99K18SA2cNHVraH16+9z6FGfauNN7/pL1LW+MqOQl2GbONfZoMrE2
+        HhP7Ro6VcBO5mE721F4vo4mCwrpaVmIC9F97/LbqAcYNtAtSaYxcUF8zZ1rhm7UUBvZfQEoVra3o
+        q96ttJPNsPuwby2Msx0+CczObveHoyIEbFrXevUUFvOFqR9x6fogowBmWv0gTLeuNbXupL/76LKR
+        pl9/vPGzLufiUEsg6tTotvFFvxjsNyylfUrX2tx8wx47fef2Ton8ZT+Td8xOXLpdgr7JerEQ6rYT
+        HFvdGtZRH9p6tqJmAQtq0LHiRsMwQHVMfdCk1Wo1tt6LNs0YYAPI7kANoyoNSxoTTDs1JBin5X01
+        TIqIhNlXqSHheSLyvMy5KLIoFBnmhFRJuB/NczozlFN0vCiNtpJ+QhNjYJAWMfmoJsYEgRUN5gNN
+        TMICJykGNU0jkt5XvfPtVR+d0Wr7G3IzYWiz/rTabX/lulbbDygpikmcHWhSWOS4yOME50me7xUp
+        gawxCaMwjrM4J18odJ8H+jk696+q2f2qfK2SkbJKcs5zTvIiz3nI4wL6Hif7cXkppvDyMJ7uBMFH
+        RxvyAVGDNbkjb3/pfFfz7jv/DfXzP83J8gbxn9O/uLgtgFme3VNAeAjE/7EGWifZXJj9KyihCeEs
+        IUUu/GsKmspCHqX7RgKDUi410IAqL+hUfLTMcnp5u8xDoIkvqHzbzQ6oTkFGYYJH8Gq7uAkwme0i
+        vE7KJCVsV/cB4nmvZq2CVZ/TsvZEugQPBJbpuhbMyd4qFRdALs998zqMZ6BYO5VouhziG7cw3Xhh
+        p1Y8B3X3u+TrjKRC1KH9aMBW3Ewkchr1fECKpEUD07GX9e54QEowsjPKhUW6QlN4KX/vl1gg3xJ0
+        xwjNHqPHtBYjZBtIz9kRgleOQnYlrUVsRg0fo1MNAdX0O3+pelDLhQQ2QHUNvxxkaU3B59ElE40b
+        +TM0V3o1QiWF9fDsSq1aO5CD16bP8GCdDnYOUcXRmcdDz2rQYtv9vSjqADxSo2X344sG0DNYgdYO
+        sFoxgRp4mqyEmI8B17OfAshZqzhd+7ALybuXx9h3+n/2Z77YbDbf/AkyDYbzWw0AAA==
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      X-RateLimit-Limit:
+      - '500'
+      X-RateLimit-Remaining:
+      - '499'
+    status:
+      code: 200
+      message: OK
+- request:
+    body:
+    headers:
+    method: GET
+    uri: https://api.foursquare.com/v2/users/self/checkins?limit=250&offset=2&v=20200130&oauth_token=TEST
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5VVzW7jNhC+9ylYnQ2Z1p8l3zbBYtvFZhuss5ddBAEljiTCEqmQlJ1sYCAP0Bco
+        0B4WKPoi6ZPkSTqU5MRJe6lPljjzzTffzEfdeS1Y5q3uvEJx8FYBpTNPw3UPxv7MvZUXl1lCwyKM
+        k2JRJAGjGSRhvki9/cyTyopSFMwKJY23+nrn2dsOQV4cXGh26808YaF1ZXqpgfFT1UvrrRbZfn/p
+        6pkOEWCgUUOxEQ7OURqiwjF7rCAGUhBFYcpZUoYhLymlyyAPIKFYp0B4C/yNQ4/TRRxkIU1mB2IT
+        OsZZ0cIXJeGXsjSAwQn2vQXZDySGIlGeJVmyyFCAiMUBZUuehBGEmCxZ69DOxVaKAsg5VMy42kpa
+        ViDYHYrTqLF/h8c4xx6xAe+90A/fzUZtGYkiTGkYhkeZH9CQpku6CGkcpkGMB7LCDhI/zuLlMkmX
+        aRZg9chl5NAA/8DsB1mNmgyvEJwL0zWD2v8X1k2hU8ay5nRYAy+hAaGDngU+nX5x/4S9xf8nWip8
+        wljrAteqtzU5U5ptBZPkE1Su59k4O+0STr9BUeNB1+eNKPCoVLpl1g3pIMvXf+ky1idTsb9/BbN5
+        +E70CLJh3iUqjPpCpbSAo82I8jJOOU95lGZpyheLPIsWyzA+Glqf40PX9Jo1H59eufGZWmn78ThK
+        FOP8Og2luMHXtbWdWc3nxoR+ZK6FL8HORVvNn7lcbYO5FFVtG1HCHPleOei+HAH8DgeA3DstWubk
+        sboHp/4WNFoGsIeSNQZGgQcXWNFNdgmCmdcb0GZ6jhfZ7MkwB0vRIER81jRqd4b7/Fk3b7mwY6GZ
+        lwPIn0APW94wY0/H7Lc3ndCja+jeLa/YwLEF0RyVVn3nlL6czo+YimID+sk4ccCSOEvpq1/2PIN1
+        zw05K94BOJFbVsF/qiyqm5cqT5XmTlHxbZg7+jaLZouYzkJKL58qzLnu5eYqy5YpZAfRp/SL8S7o
+        JVp0w/LGkRi6cySm/EI1DRRWjKdCckBiSze4AeJcGXEwdzfQpy+iLDADF3Bj3f47iYmQhFmSM22I
+        VWSsTWwtDJlY+VhnfD3lXdRA4KZzDsFKRAu0O3FTXJHH+99PADTJAb0EpBHXvdKP938dcBmRsDsA
+        //h4/wd5B5bUqgViWAk+eSM5mqmFNgc9IyXurcSJcCUf73+zpMHg53fk/cOfFehctblxJHMlezNx
+        /GzAtXXi2kIqWHg4dWGdEtItcDBlrHGfezPlKInXZocd7AA2Pl4ORc10BYase8nZrcNsBR9s5LvJ
+        CXPGbpV+WrmuVla9WtDDN8Ltp7vLXh1bZDx5hLrLQ7UtyJdBbkVUrws4WoT1jul26A010woXHMek
+        m6Mt3e12vnFRrOt8hPXwm7bf73/4B9BgBiVbBwAA
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      X-RateLimit-Limit:
+      - '500'
+      X-RateLimit-Remaining:
+      - '498'
+    status:
+      code: 200
+      message: OK
+version: 1
