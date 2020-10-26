@@ -9,8 +9,10 @@ from foursquare_swarm_ical import main
 @pytest.mark.vcr
 def test_main():
     with main.database(":memory:") as db:
+        # initial sync
         main.sync(db=db, access_token="TEST", verbose=0)
 
+        # check that we have all the checkins we expect
         checkins = [list(row) for row in db.execute(
             "SELECT id, createdAt FROM checkins ORDER BY createdAt")]
         assert checkins == [
@@ -19,6 +21,22 @@ def test_main():
             ['5e45c278162b2c0008794e67', 1581630072],
         ]
 
+        # delete newest checkin
+        db.execute("DELETE FROM checkins ORDER BY createdAt DESC LIMIT 1")
+
+        # sync again
+        main.sync(db=db, access_token="TEST", verbose=0)
+
+        # recheck that we have all the checkins we expect
+        checkins = [list(row) for row in db.execute(
+            "SELECT id, createdAt FROM checkins ORDER BY createdAt")]
+        assert checkins == [
+            ['5e4438da6f33df00072b2e60', 1581529306],
+            ['5e452f61ba340a000874006b', 1581592417],
+            ['5e45c278162b2c0008794e67', 1581630072],
+        ]
+
+        # check ical generation
         emojis = Emojis()
 
         assert main.ical(db=db, emojis=emojis) == textwrap.dedent("""\
