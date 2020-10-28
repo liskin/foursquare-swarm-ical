@@ -8,7 +8,7 @@ Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate 
 
 ```
 pipx ensurepath
-pipx install --spec git+https://github.com/liskin/foursquare-swarm-ical foursquare_swarm_ical
+pipx install --spec git+https://github.com/liskin/foursquare-swarm-ical foursquare-swarm-ical
 ```
 
 To keep a local git clone around:
