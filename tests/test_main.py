@@ -1,6 +1,6 @@
 import textwrap
 
-import pytest  # type: ignore [import]
+import pytest
 
 from foursquare_swarm_ical.emoji import Emojis
 from foursquare_swarm_ical import main
