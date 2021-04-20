@@ -47,6 +47,8 @@ readme: $(wildcard README.md)
 %.md: INTERACTIVE=$(shell [ -t 0 ] && echo --interactive)
 %.md: $(VENV_DONE) _phony
 	PATH="$(CURDIR)/$(VENV)/bin:$$PATH" \
+	XDG_DATA_HOME=/home/user/.local/share \
+	XDG_CONFIG_HOME=/home/user/.config \
 	$(VENV_PYTHON) -m cram --indent=4 $(INTERACTIVE) $@
 
 .PHONY: dist

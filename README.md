@@ -58,6 +58,9 @@ Parameters.
                                 [default: False]
     
       -o, --output FILENAME     Output file
+      --config FILE             Read configuration from FILE.  [default: /home/use
+                                r/.config/foursquare_swarm_ical/config.yaml]
+    
       --help                    Show this message and exit.
 
 
