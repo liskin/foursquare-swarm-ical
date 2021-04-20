@@ -3,7 +3,6 @@ from datetime import datetime
 import json
 import sqlite3
 from sys import stderr
-from sys import stdout
 from typing import Any
 from typing import Iterator
 from typing import Optional
@@ -95,7 +94,10 @@ def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
 @click.option(
     '-e', '--emoji/--no-emoji', default=False, show_default=True,
     help="Prefix summary with venue category as emoji")
-def main(verbose: bool, do_sync: bool, access_token: str, db_path: str, emoji: bool) -> None:
+@click.option(
+    '-o', '--output', type=click.File('wb'), default='-',
+    help="Output file")
+def main(verbose: bool, do_sync: bool, access_token: str, db_path: str, emoji: bool, output) -> None:
     """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
     with database(db_path) as db:
         if do_sync:
@@ -104,4 +106,4 @@ def main(verbose: bool, do_sync: bool, access_token: str, db_path: str, emoji: b
 
             sync(db=db, access_token=access_token, verbose=verbose)
 
-        stdout.buffer.write(ical(db=db, emojis=(Emojis() if emoji else None)))
+        output.write(ical(db=db, emojis=(Emojis() if emoji else None)))

@@ -57,6 +57,7 @@ Parameters.
       -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
                                 [default: False]
     
+      -o, --output FILENAME     Output file
       --help                    Show this message and exit.
 
 
