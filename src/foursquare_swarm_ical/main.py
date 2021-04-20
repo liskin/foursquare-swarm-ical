@@ -34,7 +34,8 @@ def yaml_config_option():
     '--access-token', type=str, envvar='FOURSQUARE_TOKEN',
     help="Foursquare oauth2 access token")
 @click.option(
-    '--database', type=click.Path(writable=True), default='checkins.sqlite', show_default=True,
+    '--database', type=click.Path(writable=True),
+    default=os.path.join(appdirs.user_data_dir(appname=__package__), 'checkins.sqlite'), show_default=True,
     help="SQLite database file")
 @click.option(
     '-e', '--emoji/--no-emoji', default=False, show_default=True,

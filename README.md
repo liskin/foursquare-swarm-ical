@@ -53,7 +53,9 @@ Parameters.
                                 True]
     
       --access-token TEXT       Foursquare oauth2 access token
-      --database PATH           SQLite database file  [default: checkins.sqlite]
+      --database PATH           SQLite database file  [default: /home/user/.local/
+                                share/foursquare_swarm_ical/checkins.sqlite]
+    
       -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
                                 [default: False]
     
