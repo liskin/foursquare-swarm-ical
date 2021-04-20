@@ -2,18 +2,19 @@ import textwrap
 
 import pytest
 
+from foursquare_swarm_ical import db
 from foursquare_swarm_ical.emoji import Emojis
-from foursquare_swarm_ical import main
+from foursquare_swarm_ical import ical
 
 
 @pytest.mark.vcr
-def test_main():
-    with main.database(":memory:") as db:
+def test_all():
+    with db.database(":memory:") as db_conn:
         # initial sync
-        main.sync(db=db, access_token="TEST", verbose=0)
+        db.sync(db=db_conn, access_token="TEST", verbose=-1)
 
         # check that we have all the checkins we expect
-        checkins = [list(row) for row in db.execute(
+        checkins = [list(row) for row in db_conn.execute(
             "SELECT id, createdAt FROM checkins ORDER BY createdAt")]
         assert checkins == [
             ['5e4438da6f33df00072b2e60', 1581529306],
@@ -22,13 +23,13 @@ def test_main():
         ]
 
         # delete newest checkin
-        db.execute("DELETE FROM checkins ORDER BY createdAt DESC LIMIT 1")
+        db_conn.execute("DELETE FROM checkins ORDER BY createdAt DESC LIMIT 0")
 
         # sync again
-        main.sync(db=db, access_token="TEST", verbose=0)
+        db.sync(db=db_conn, access_token="TEST", verbose=-1)
 
         # recheck that we have all the checkins we expect
-        checkins = [list(row) for row in db.execute(
+        checkins = [list(row) for row in db_conn.execute(
             "SELECT id, createdAt FROM checkins ORDER BY createdAt")]
         assert checkins == [
             ['5e4438da6f33df00072b2e60', 1581529306],
@@ -39,7 +40,7 @@ def test_main():
         # check ical generation
         emojis = Emojis()
 
-        assert main.ical(db=db, emojis=emojis) == textwrap.dedent("""\
+        assert ical.ical(db=db_conn, emojis=emojis) == textwrap.dedent("""\
             BEGIN:VCALENDAR
             VERSION:2.0
             PRODID:foursquare-swarm-ical
@@ -73,7 +74,7 @@ def test_main():
             END:VCALENDAR
         """).replace('\n', '\r\n').encode('utf-8')
 
-        assert main.ical(db=db, emojis=None) == textwrap.dedent("""\
+        assert ical.ical(db=db_conn, emojis=None) == textwrap.dedent("""\
             BEGIN:VCALENDAR
             VERSION:2.0
             PRODID:foursquare-swarm-ical
