@@ -43,19 +43,21 @@ Parameters.
 ## Usage
 
     $ foursquare-swarm-ical --help
-    usage: foursquare-swarm-ical [-h] [-v] [--no-sync] [--access-token XXX]
-                                 [--database FILE] [--emoji]
+    Usage: foursquare-swarm-ical [OPTIONS]
     
-    Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar
+      Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar
     
-    optional arguments:
-      -h, --help          show this help message and exit
-      -v, --verbose
-      --no-sync           skip online sync, print ical from database only
-      --access-token XXX  foursquare oauth2 access token (default:
-                          getenv('FOURSQUARE_TOKEN'))
-      --database FILE     sqlite database file (default: checkins.sqlite)
-      --emoji             prefix summary with venue category as emoji
+    Options:
+      -v, --verbose             Be more verbose
+      --sync / --no-sync        Sync again or just use local database?  [default:
+                                True]
+    
+      --access-token TEXT       Foursquare oauth2 access token
+      --database PATH           SQLite database file  [default: checkins.sqlite]
+      -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
+                                [default: False]
+    
+      --help                    Show this message and exit.
 
 
 

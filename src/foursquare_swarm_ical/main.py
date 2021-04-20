@@ -1,8 +1,6 @@
-import argparse
 from contextlib import contextmanager
 from datetime import datetime
 import json
-import os
 import sqlite3
 from sys import stderr
 from sys import stdout
@@ -10,6 +8,7 @@ from typing import Any
 from typing import Iterator
 from typing import Optional
 
+import click
 from foursquare import Foursquare  # type: ignore [import]
 import icalendar  # type: ignore [import]
 import pytz
@@ -80,41 +79,29 @@ def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
     return cal.to_ical()
 
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"
-    )
-    parser.add_argument(
-        '-v', '--verbose', action='count', default=0,
-    )
-    parser.add_argument(
-        '--no-sync', dest='sync', action='store_false',
-        help="skip online sync, print ical from database only",
-    )
-    parser.add_argument(
-        '--access-token', metavar="XXX", default=os.getenv('FOURSQUARE_TOKEN'),
-        help="foursquare oauth2 access token (default: getenv('FOURSQUARE_TOKEN'))",
-    )
-    parser.add_argument(
-        '--database', metavar="FILE", default="checkins.sqlite",
-        help="sqlite database file (default: checkins.sqlite)",
-    )
-    parser.add_argument(
-        '--emoji', action='store_true',
-        help="prefix summary with venue category as emoji",
-    )
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-
-    emojis = Emojis() if args.emoji else None
-
-    with database(args.database) as db:
-        if args.sync:
-            if not args.access_token:
+@click.command(context_settings={'max_content_width': 120})
+@click.option(
+    '-v', '--verbose', count=True,
+    help="Be more verbose")
+@click.option(
+    '--sync/--no-sync', 'do_sync', default=True, show_default=True,
+    help="Sync again or just use local database?")
+@click.option(
+    '--access-token', type=str, envvar='FOURSQUARE_TOKEN',
+    help="Foursquare oauth2 access token")
+@click.option(
+    '--database', 'db_path', type=click.Path(writable=True), default='checkins.sqlite', show_default=True,
+    help="SQLite database file")
+@click.option(
+    '-e', '--emoji/--no-emoji', default=False, show_default=True,
+    help="Prefix summary with venue category as emoji")
+def main(verbose: bool, do_sync: bool, access_token: str, db_path: str, emoji: bool) -> None:
+    """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
+    with database(db_path) as db:
+        if do_sync:
+            if not access_token:
                 raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
-            sync(db=db, access_token=args.access_token, verbose=args.verbose)
 
-        stdout.buffer.write(ical(db=db, emojis=emojis))
+            sync(db=db, access_token=access_token, verbose=verbose)
+
+        stdout.buffer.write(ical(db=db, emojis=(Emojis() if emoji else None)))
