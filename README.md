@@ -79,3 +79,17 @@ SUMMARY:@ Venue
 DTSTART;VALUE=DATE-TIME:20120304T214456Z
 …
 ```
+
+## Configuration file
+
+Access token (and other options) can be set permanently in a config file,
+which is located at `~/.config/foursquare_swarm_ical/config.yaml` by default
+(on Linux; on other platforms see output of `--help`).
+
+Example config file:
+
+```
+access_token: TOKENTOKENTOKENTOKENTOKENTOKEN
+emoji: True
+verbose: 1
+```
