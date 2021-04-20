@@ -52,7 +52,9 @@ Parameters.
       --sync / --no-sync        Sync again or just use local database?  [default:
                                 True]
     
-      --access-token TEXT       Foursquare oauth2 access token
+      --access-token TEXT       Foursquare oauth2 access token  [env var:
+                                FOURSQUARE_TOKEN]
+    
       --database PATH           SQLite database file  [default: /home/user/.local/
                                 share/foursquare_swarm_ical/checkins.sqlite]
     

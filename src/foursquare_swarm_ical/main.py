@@ -31,7 +31,7 @@ def yaml_config_option():
     '--sync/--no-sync', default=True, show_default=True,
     help="Sync again or just use local database?")
 @click.option(
-    '--access-token', type=str, envvar='FOURSQUARE_TOKEN',
+    '--access-token', type=str, envvar='FOURSQUARE_TOKEN', show_envvar=True,
     help="Foursquare oauth2 access token")
 @click.option(
     '--database', type=click.Path(writable=True),
