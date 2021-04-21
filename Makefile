@@ -59,6 +59,10 @@ dist: $(VENV_DONE)
 twine-upload: dist
 	$(VENV_PYTHON) -m twine upload $(wildcard dist/*)
 
+.PHONY: ipython
+ipython: $(VENV_DONE)
+	$(VENV_PYTHON) -m IPython
+
 .PHONY: clean
 clean:
 	git clean -ffdX
