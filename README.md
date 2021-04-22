@@ -65,6 +65,7 @@ Parameters.
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
     
+      --config-sample           Show sample configuration file
       --help                    Show this message and exit.
 
 
@@ -88,10 +89,23 @@ Access token (and other options) can be set permanently in a config file,
 which is located at `~/.config/foursquare_swarm_ical/config.yaml` by default
 (on Linux; on other platforms see output of `--help`).
 
-Example config file:
+Sample config file can be generated using the `--config-sample` flag:
 
-```
-access_token: TOKENTOKENTOKENTOKENTOKENTOKEN
-emoji: True
-verbose: 1
-```
+    $ foursquare-swarm-ical --config-sample
+    # Be more verbose
+    verbose: 0
+    
+    # Sync again or just use local database?
+    sync: true
+    
+    # Foursquare oauth2 access token
+    access_token: TEXT
+    
+    # SQLite database file
+    database: /home/user/.local/share/foursquare_swarm_ical/checkins.sqlite
+    
+    # Prefix summary with venue category as emoji
+    emoji: false
+    
+    # Output file
+    output: '-'

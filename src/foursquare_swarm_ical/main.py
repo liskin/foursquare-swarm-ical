@@ -30,6 +30,7 @@ from .emoji import Emojis
     '-o', '--output', type=click.File('wb'), default='-',
     help="Output file")
 @config_file.yaml_config_option()
+@config_file.yaml_config_sample_option()
 def main(verbose: bool, sync: bool, access_token: str, database: str, emoji: bool, output) -> None:
     """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
     with db.database(database) as db_conn:
