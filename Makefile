@@ -75,6 +75,7 @@ clean:
 
 define VENV_CREATE
 	$(PYTHON) -m venv $(VENV)
+	$(VENV_PYTHON) -m pip install wheel
 endef
 
 define VENV_CREATE_SYSTEM_SITE_PACKAGES
