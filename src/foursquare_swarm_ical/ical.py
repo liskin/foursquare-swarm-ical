@@ -1,10 +1,10 @@
 from datetime import datetime
+from datetime import timezone
 import json
 import sqlite3
 from typing import Optional
 
 import icalendar  # type: ignore [import]
-import pytz
 
 from .emoji import Emojis
 
@@ -29,8 +29,8 @@ def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
         ev.add('url', "https://www.swarmapp.com/self/checkin/" + checkin['id'])
         ev.add('summary', prefix + " " + checkin['venue']['name'])
         ev.add('location', address)
-        ev.add('dtstart', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
-        ev.add('dtend', datetime.fromtimestamp(checkin['createdAt'], pytz.utc))
+        ev.add('dtstart', datetime.fromtimestamp(checkin['createdAt'], timezone.utc))
+        ev.add('dtend', datetime.fromtimestamp(checkin['createdAt'], timezone.utc))
         ev.add('geo', (location['lat'], location['lng']))
         cal.add_component(ev)
 
