@@ -1,7 +1,7 @@
 import os
 
-import appdirs  # type: ignore [import]
 import click
+import platformdirs
 
 from . import config_file
 from . import db
@@ -21,7 +21,7 @@ from .emoji import Emojis
     help="Foursquare oauth2 access token")
 @click.option(
     '--database', type=click.Path(writable=True),
-    default=os.path.join(appdirs.user_data_dir(appname=__package__), 'checkins.sqlite'), show_default=True,
+    default=os.path.join(platformdirs.user_data_dir(appname=__package__), 'checkins.sqlite'), show_default=True,
     help="SQLite database file")
 @click.option(
     '-e', '--emoji/--no-emoji', default=False, show_default=True,
