@@ -42,6 +42,7 @@ Parameters.
 
 ## Usage
 
+<!-- include .readme.md/help.md -->
     $ foursquare-swarm-ical --help
     Usage: foursquare-swarm-ical [OPTIONS]
     
@@ -62,8 +63,7 @@ Parameters.
                                 r/.config/foursquare_swarm_ical/config.yaml]
       --config-sample           Show sample configuration file
       --help                    Show this message and exit.
-
-
+<!-- end include -->
 
 Example:
 
@@ -86,6 +86,7 @@ which is located at `~/.config/foursquare_swarm_ical/config.yaml` by default
 
 Sample config file can be generated using the `--config-sample` flag:
 
+<!-- include .readme.md/config-sample.md -->
     $ foursquare-swarm-ical --config-sample
     # Be more verbose
     verbose: 0
@@ -104,3 +105,4 @@ Sample config file can be generated using the `--config-sample` flag:
     
     # Output file
     output: '-'
+<!-- end include -->
