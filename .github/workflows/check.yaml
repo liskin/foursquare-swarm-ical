@@ -100,11 +100,14 @@ jobs:
           apt-cache --generate pkgnames \
             | grep --line-regexp --fixed-strings \
               -e git \
+              -e python3-build \
               -e python3-click \
+              -e python3-configobj \
               -e python3-cram \
               -e python3-flake8 \
               -e python3-icalendar \
               -e python3-isort \
+              -e python3-multidict \
               -e python3-mypy \
               -e python3-pep517 \
               -e python3-pip \
@@ -113,8 +116,10 @@ jobs:
               -e python3-pytest \
               -e python3-typeshed \
               -e python3-tz \
+              -e python3-vcr \
               -e python3-venv \
               -e python3-yaml \
+              -e python3-yarl \
               -e twine \
             | xargs apt install -y
       - uses: actions/checkout@v2
