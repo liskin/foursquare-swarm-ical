@@ -1,8 +1,10 @@
 # foursquare-swarm-ical
 
-## Overview
+**Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate iCalendar.**
 
-Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate iCalendar.
+[![PyPI Python Version badge](https://img.shields.io/pypi/pyversions/foursquare-swarm-ical)](https://pypi.org/project/foursquare-swarm-ical/)
+[![PyPI Version badge](https://img.shields.io/pypi/v/foursquare-swarm-ical)](https://pypi.org/project/foursquare-swarm-ical/)
+![License badge](https://img.shields.io/github/license/liskin/foursquare-swarm-ical)
 
 ## Installation
 
