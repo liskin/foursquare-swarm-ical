@@ -1,16 +1,18 @@
 from contextlib import contextmanager
 from datetime import datetime
 import json
+from os import PathLike
 import sqlite3
 from sys import stderr
 from typing import Any
 from typing import Iterator
+from typing import Union
 
 from foursquare import Foursquare  # type: ignore [import]
 
 
 @contextmanager
-def database(filename: str) -> Iterator[sqlite3.Connection]:
+def database(filename: Union[str, PathLike]) -> Iterator[sqlite3.Connection]:
     db = sqlite3.connect(filename)
     db.row_factory = sqlite3.Row
     try:

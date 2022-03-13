@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 
 import click
 import platformdirs
@@ -20,8 +20,9 @@ from .emoji import Emojis
     '--access-token', type=str, envvar='FOURSQUARE_TOKEN', show_envvar=True,
     help="Foursquare oauth2 access token")
 @click.option(
-    '--database', type=click.Path(writable=True),
-    default=os.path.join(platformdirs.user_data_dir(appname=__package__), 'checkins.sqlite'), show_default=True,
+    '--database', type=click.Path(path_type=Path, writable=True),  # type: ignore [type-var] # debian typeshed compat
+    default=platformdirs.user_data_path(appname=__package__) / 'checkins.sqlite',
+    show_default=True,
     help="SQLite database file")
 @click.option(
     '-e', '--emoji/--no-emoji', default=False, show_default=True,
@@ -31,7 +32,7 @@ from .emoji import Emojis
     help="Output file")
 @config_file.yaml_config_option()
 @config_file.yaml_config_sample_option()
-def main(verbose: bool, sync: bool, access_token: str, database: str, emoji: bool, output) -> None:
+def main(verbose: bool, sync: bool, access_token: str, database: Path, emoji: bool, output) -> None:
     """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
     with db.database(database) as db_conn:
         if sync:
