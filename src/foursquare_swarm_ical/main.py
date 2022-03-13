@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import BinaryIO
 
 import click
 import platformdirs
@@ -32,7 +33,7 @@ from .emoji import Emojis
     help="Output file")
 @config_file.yaml_config_option()
 @config_file.yaml_config_sample_option()
-def main(verbose: bool, sync: bool, access_token: str, database: Path, emoji: bool, output) -> None:
+def main(verbose: bool, sync: bool, access_token: str, database: Path, emoji: bool, output: BinaryIO) -> None:
     """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
     with db.database(database) as db_conn:
         if sync:
