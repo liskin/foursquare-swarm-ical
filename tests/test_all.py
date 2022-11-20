@@ -1,3 +1,4 @@
+import re
 import textwrap
 
 import pytest  # type: ignore [import]
@@ -40,14 +41,14 @@ def test_all():
         # check ical generation
         emojis = Emojis()
 
-        assert ical.ical(db=db_conn, emojis=emojis) == textwrap.dedent("""\
+        expected = textwrap.dedent("""\
             BEGIN:VCALENDAR
             VERSION:2.0
             PRODID:foursquare-swarm-ical
             BEGIN:VEVENT
             SUMMARY:🍺 Pivnice Pegas
-            DTSTART;VALUE=DATE-TIME:20200212T174146Z
-            DTEND;VALUE=DATE-TIME:20200212T174146Z
+            DTSTART:20200212T174146Z
+            DTEND:20200212T174146Z
             UID:5e4438da6f33df00072b2e60@foursquare.com
             GEO:49.203087013053825;16.595776878926344
             LOCATION:Jiráskova 44\\, 602 00 Brno\\, Česká republika
@@ -55,8 +56,8 @@ def test_all():
             END:VEVENT
             BEGIN:VEVENT
             SUMMARY:🍴 Zahrada Ambrosia
-            DTSTART;VALUE=DATE-TIME:20200213T111337Z
-            DTEND;VALUE=DATE-TIME:20200213T111337Z
+            DTSTART:20200213T111337Z
+            DTEND:20200213T111337Z
             UID:5e452f61ba340a000874006b@foursquare.com
             GEO:49.1980983508588;16.597204121337384
             LOCATION:Údolní 599/37\\, 602 00 Brno\\, Česká republika
@@ -64,46 +65,23 @@ def test_all():
             END:VEVENT
             BEGIN:VEVENT
             SUMMARY:🍺 U Vašinů
-            DTSTART;VALUE=DATE-TIME:20200213T214112Z
-            DTEND;VALUE=DATE-TIME:20200213T214112Z
+            DTSTART:20200213T214112Z
+            DTEND:20200213T214112Z
             UID:5e45c278162b2c0008794e67@foursquare.com
             GEO:49.207467399173076;16.60221666114012
             LOCATION:Kotlářská 907/41\\, 602 00 Brno\\, Česká republika
             URL:https://www.swarmapp.com/self/checkin/5e45c278162b2c0008794e67
             END:VEVENT
             END:VCALENDAR
-        """).replace('\n', '\r\n').encode('utf-8')
+        """).replace('\n', '\r\n')
+        expected_noemoji = re.sub(r"(?<=SUMMARY:)\S ", "@ ", expected)
 
-        assert ical.ical(db=db_conn, emojis=None) == textwrap.dedent("""\
-            BEGIN:VCALENDAR
-            VERSION:2.0
-            PRODID:foursquare-swarm-ical
-            BEGIN:VEVENT
-            SUMMARY:@ Pivnice Pegas
-            DTSTART;VALUE=DATE-TIME:20200212T174146Z
-            DTEND;VALUE=DATE-TIME:20200212T174146Z
-            UID:5e4438da6f33df00072b2e60@foursquare.com
-            GEO:49.203087013053825;16.595776878926344
-            LOCATION:Jiráskova 44\\, 602 00 Brno\\, Česká republika
-            URL:https://www.swarmapp.com/self/checkin/5e4438da6f33df00072b2e60
-            END:VEVENT
-            BEGIN:VEVENT
-            SUMMARY:@ Zahrada Ambrosia
-            DTSTART;VALUE=DATE-TIME:20200213T111337Z
-            DTEND;VALUE=DATE-TIME:20200213T111337Z
-            UID:5e452f61ba340a000874006b@foursquare.com
-            GEO:49.1980983508588;16.597204121337384
-            LOCATION:Údolní 599/37\\, 602 00 Brno\\, Česká republika
-            URL:https://www.swarmapp.com/self/checkin/5e452f61ba340a000874006b
-            END:VEVENT
-            BEGIN:VEVENT
-            SUMMARY:@ U Vašinů
-            DTSTART;VALUE=DATE-TIME:20200213T214112Z
-            DTEND;VALUE=DATE-TIME:20200213T214112Z
-            UID:5e45c278162b2c0008794e67@foursquare.com
-            GEO:49.207467399173076;16.60221666114012
-            LOCATION:Kotlářská 907/41\\, 602 00 Brno\\, Česká republika
-            URL:https://www.swarmapp.com/self/checkin/5e45c278162b2c0008794e67
-            END:VEVENT
-            END:VCALENDAR
-        """).replace('\n', '\r\n').encode('utf-8')
+        # workaround to be compatible with icalendar versions before and after 5.0.2
+        # see https://github.com/collective/icalendar/issues/318
+        def ical_add_dt_value(s):
+            return re.sub(r"^(DT[A-Z]+):", r"\1;VALUE=DATE-TIME:", s, flags=re.MULTILINE)
+
+        assert ical.ical(db=db_conn, emojis=emojis) == expected.encode('utf-8') \
+            or ical.ical(db=db_conn, emojis=emojis) == ical_add_dt_value(expected).encode('utf-8')
+        assert ical.ical(db=db_conn, emojis=None) == expected_noemoji.encode('utf-8') \
+            or ical.ical(db=db_conn, emojis=None) == ical_add_dt_value(expected_noemoji).encode('utf-8')
