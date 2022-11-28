@@ -1,6 +1,12 @@
+import sys
+
 from foursquare import Foursquare  # type: ignore [import]
-from pkg_resources import resource_stream
 import yaml
+
+if sys.version_info >= (3, 9):
+    import importlib.resources as importlib_resources  # isort: skip
+else:
+    import importlib_resources  # isort: skip
 
 
 def make_venues_yaml(access_token: str) -> None:
@@ -42,7 +48,7 @@ def index_by_id(index, category):
 
 class Emojis:
     def __init__(self):
-        with resource_stream(__package__, "emoji.yaml") as f:
+        with importlib_resources.files(__package__).joinpath("emoji.yaml").open('r', encoding='utf-8') as f:
             self.tree = yaml.safe_load(f)
 
         fill_defaults(self.tree)
