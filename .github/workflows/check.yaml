@@ -118,7 +118,6 @@ jobs:
               -e python3-platformdirs \
               -e python3-pytest \
               -e python3-typeshed \
-              -e python3-tz \
               -e python3-vcr \
               -e python3-venv \
               -e python3-yaml \

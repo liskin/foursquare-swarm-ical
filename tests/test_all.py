@@ -76,12 +76,5 @@ def test_all():
         """).replace('\n', '\r\n')
         expected_noemoji = re.sub(r"(?<=SUMMARY:)\S ", "@ ", expected)
 
-        # workaround to be compatible with icalendar versions before and after 5.0.2
-        # see https://github.com/collective/icalendar/issues/318
-        def ical_add_dt_value(s):
-            return re.sub(r"^(DT[A-Z]+):", r"\1;VALUE=DATE-TIME:", s, flags=re.MULTILINE)
-
-        assert ical.ical(db=db_conn, emojis=emojis) == expected.encode('utf-8') \
-            or ical.ical(db=db_conn, emojis=emojis) == ical_add_dt_value(expected).encode('utf-8')
-        assert ical.ical(db=db_conn, emojis=None) == expected_noemoji.encode('utf-8') \
-            or ical.ical(db=db_conn, emojis=None) == ical_add_dt_value(expected_noemoji).encode('utf-8')
+        assert ical.ical(db=db_conn, emojis=emojis) == expected.encode('utf-8')
+        assert ical.ical(db=db_conn, emojis=None) == expected_noemoji.encode('utf-8')
