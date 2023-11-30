@@ -37,7 +37,7 @@ pip install foursquare-swarm-ical
 
 ## Usage
 
-<!-- include .readme.md/help.md -->
+<!-- include tests/readme/help.md -->
     $ foursquare-swarm-ical --help
     Usage: foursquare-swarm-ical [OPTIONS]
     
@@ -58,7 +58,7 @@ which is located at `~/.config/foursquare_swarm_ical/config.yaml` by default
 
 Sample config file can be generated using the `--config-sample` flag:
 
-<!-- include .readme.md/config-sample.md -->
+<!-- include tests/readme/config-sample.md -->
     $ foursquare-swarm-ical --config-sample
 <!-- end include -->
 
