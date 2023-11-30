@@ -31,7 +31,7 @@ provides, feel free to just:
 pip install foursquare-swarm-ical
 ```
 
-[pipx]: https://github.com/pipxproject/pipx
+[pipx]: https://github.com/pypa/pipx
 
 ## Preparation
 
