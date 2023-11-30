@@ -56,6 +56,32 @@ test = [
 [project.scripts]
 foursquare-swarm-ical = "foursquare_swarm_ical.cli:cli"
 
+[tool.gha-check-distro]
+dependencies-apt = [
+    "python3-build",
+    "python3-click",
+    "python3-configobj",
+    "python3-cram",
+    "python3-flake8",
+    "python3-icalendar",
+    "python3-importlib-metadata",
+    "python3-importlib-resources",
+    "python3-isort",
+    "python3-multidict",
+    "python3-mypy",
+    "python3-pep517",
+    "python3-pip",
+    "python3-pip-whl",
+    "python3-platformdirs",
+    "python3-pytest",
+    "python3-typeshed",
+    "python3-vcr",
+    "python3-venv",
+    "python3-yaml",
+    "python3-yarl",
+    "twine",
+]
+
 [tool.setuptools_scm]
 
 [tool.setuptools.packages.find]
@@ -68,5 +94,8 @@ show_error_codes = true
 
 [tool.isort]
 profile = "open_stack"
+
+[tool.ruff]
+line-length = 120
 
 # vim:set et:
