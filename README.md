@@ -1,10 +1,12 @@
 # foursquare-swarm-ical
 
-**Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate iCalendar.**
-
 [![PyPI Python Version badge](https://img.shields.io/pypi/pyversions/foursquare-swarm-ical)](https://pypi.org/project/foursquare-swarm-ical/)
 [![PyPI Version badge](https://img.shields.io/pypi/v/foursquare-swarm-ical)](https://pypi.org/project/foursquare-swarm-ical/)
 ![License badge](https://img.shields.io/github/license/liskin/foursquare-swarm-ical)
+
+## Overview
+
+**Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate iCalendar.**
 
 ## Installation
 
@@ -12,7 +14,7 @@ Using [pipx][]:
 
 ```
 pipx ensurepath
-pipx install git+https://github.com/liskin/foursquare-swarm-ical
+pipx install foursquare-swarm-ical
 ```
 
 To keep a local git clone around:
@@ -26,7 +28,7 @@ Alternatively, if you don't need the isolated virtualenv that [pipx][]
 provides, feel free to just:
 
 ```
-pip install git+https://github.com/liskin/foursquare-swarm-ical
+pip install foursquare-swarm-ical
 ```
 
 [pipx]: https://github.com/pipxproject/pipx
@@ -108,3 +110,14 @@ Sample config file can be generated using the `--config-sample` flag:
     # Output file
     output: '-'
 <!-- end include -->
+
+## Donations (♥ = €)
+
+If you like this tool and wish to support its development and maintenance,
+please consider [a small donation](https://www.paypal.me/lisknisi/5EUR) or
+[recurrent support through GitHub Sponsors](https://github.com/sponsors/liskin).
+
+By donating, you'll also support the development of my other projects. You
+might like these:
+
+* [strava-offline](https://github.com/liskin/strava-offline) – Keep a local mirror of Strava activities for further analysis/processing
