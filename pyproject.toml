@@ -24,7 +24,6 @@ classifiers = [ # https://pypi.org/classifiers/
     "Operating System :: OS Independent",
     "Topic :: Utilities",
 ]
-urls = {Homepage = "https://github.com/liskin/foursquare-swarm-ical"}
 requires-python = "~= 3.8"
 dependencies = [
     "PyYAML",
@@ -52,6 +51,14 @@ test = [
     "pytest",
     "pytest-recording",
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/liskin/foursquare-swarm-ical"
+"Release Notes" = "https://github.com/liskin/foursquare-swarm-ical/releases"
+"Issues" = "https://github.com/liskin/foursquare-swarm-ical/issues"
+"CI" = "https://github.com/liskin/foursquare-swarm-ical/actions"
+"Donations (GitHub)" = "https://github.com/sponsors/liskin"
+"Donations (PayPal)" = "https://www.paypal.me/lisknisi/5EUR"
 
 [project.scripts]
 foursquare-swarm-ical = "foursquare_swarm_ical.cli:cli"
