@@ -8,6 +8,8 @@
 
 **Sync Foursquare Swarm check-ins to local sqlite DB (incrementally) and generate iCalendar.**
 
+![Example screenshot of the output in Google Calendar](https://github.com/liskin/foursquare-swarm-ical/assets/300342/b2c88749-3196-4645-8e2d-8574e19dfaa5)
+
 ## Installation
 
 Using [pipx][]:
