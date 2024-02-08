@@ -63,7 +63,7 @@ Parameters.
       --database PATH           SQLite database file  [default: /home/user/.local/
                                 share/foursquare_swarm_ical/checkins.sqlite]
       -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
-                                [default: no-emoji]
+                                [default: emoji]
       -o, --output FILENAME     Output file
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
@@ -107,7 +107,7 @@ Sample config file can be generated using the `--config-sample` flag:
     database: /home/user/.local/share/foursquare_swarm_ical/checkins.sqlite
     
     # Prefix summary with venue category as emoji
-    emoji: false
+    emoji: true
     
     # Output file
     output: '-'

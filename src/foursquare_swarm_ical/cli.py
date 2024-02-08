@@ -26,7 +26,7 @@ from .emoji import Emojis
     show_default=True,
     help="SQLite database file")
 @click.option(
-    '-e', '--emoji/--no-emoji', default=False, show_default=True,
+    '--emoji/--no-emoji', '-e', default=True, show_default=True,
     help="Prefix summary with venue category as emoji")
 @click.option(
     '-o', '--output', type=click.File('wb'), default='-',

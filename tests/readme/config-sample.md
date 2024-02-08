@@ -12,7 +12,7 @@
     database: /home/user/.local/share/foursquare_swarm_ical/checkins.sqlite
     
     # Prefix summary with venue category as emoji
-    emoji: false
+    emoji: true
     
     # Output file
     output: '-'

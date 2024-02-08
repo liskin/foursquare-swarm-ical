@@ -12,7 +12,7 @@
       --database PATH           SQLite database file  [default: /home/user/.local/
                                 share/foursquare_swarm_ical/checkins.sqlite]
       -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
-                                [default: no-emoji]
+                                [default: emoji]
       -o, --output FILENAME     Output file
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
