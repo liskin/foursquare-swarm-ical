@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timezone
-import json
-import sqlite3
+from typing import Any
+from typing import Iterator
 from typing import Optional
 
 import icalendar  # type: ignore [import]
@@ -9,14 +9,12 @@ import icalendar  # type: ignore [import]
 from .emoji import Emojis
 
 
-def ical(db: sqlite3.Connection, emojis: Optional[Emojis]) -> bytes:
+def ical(checkins: Iterator[Any], emojis: Optional[Emojis]) -> bytes:
     cal = icalendar.Calendar()
     cal.add('prodid', "foursquare-swarm-ical")
     cal.add('version', "2.0")
 
-    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt"):
-        checkin = json.loads(checkin['data'])
-
+    for checkin in checkins:
         prefix = emojis.get_emoji_for_venue(checkin['venue']) if emojis else "@"
 
         location = checkin['venue']['location']

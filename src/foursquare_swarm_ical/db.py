@@ -28,14 +28,19 @@ def database(filename: Union[str, PathLike]) -> Iterator[sqlite3.Connection]:
         db.close()
 
 
-def checkins(access_token: str) -> Iterator[Any]:
+def checkins(db: sqlite3.Connection) -> Iterator[Any]:
+    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt"):
+        yield json.loads(checkin['data'])
+
+
+def fetch_checkins(access_token: str) -> Iterator[Any]:
     client = Foursquare(access_token=access_token)
     return client.users.all_checkins()
 
 
 def sync(db: sqlite3.Connection, access_token: str, verbose: int) -> None:
     with db:  # transaction
-        for checkin in checkins(access_token=access_token):
+        for checkin in fetch_checkins(access_token=access_token):
             tup = (checkin['id'], int(checkin['createdAt']), json.dumps(checkin))
             try:
                 db.execute(("INSERT INTO checkins (id, createdAt, data) VALUES (?, ?, ?)"), tup)

@@ -42,4 +42,4 @@ def cli(verbose: bool, sync: bool, access_token: str, database: Path, emoji: boo
 
             db.sync(db=db_conn, access_token=access_token, verbose=verbose)
 
-        output.write(ical.ical(db=db_conn, emojis=(Emojis() if emoji else None)))
+        output.write(ical.ical(checkins=db.checkins(db=db_conn), emojis=(Emojis() if emoji else None)))
