@@ -9,10 +9,12 @@ import icalendar  # type: ignore [import]
 from .emoji import Emojis
 
 
-def ical(checkins: Iterator[Any], emojis: Optional[Emojis]) -> bytes:
+def ical(checkins: Iterator[Any], emojis: Optional[Emojis] = None, max_size: Optional[int] = None) -> bytes:
     cal = icalendar.Calendar()
     cal.add('prodid', "foursquare-swarm-ical")
     cal.add('version', "2.0")
+
+    cal_size = len(cal.to_ical())
 
     for checkin in checkins:
         prefix = emojis.get_emoji_for_venue(checkin['venue']) if emojis else "@"
@@ -30,6 +32,12 @@ def ical(checkins: Iterator[Any], emojis: Optional[Emojis]) -> bytes:
         ev.add('dtstart', datetime.fromtimestamp(checkin['createdAt'], timezone.utc))
         ev.add('dtend', datetime.fromtimestamp(checkin['createdAt'], timezone.utc))
         ev.add('geo', (location['lat'], location['lng']))
+
+        ev_size = len(ev.to_ical())
+        if max_size is not None and cal_size + ev_size > max_size:
+            break
+
         cal.add_component(ev)
+        cal_size += ev_size
 
     return cal.to_ical()

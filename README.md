@@ -65,6 +65,8 @@ Parameters.
       -e, --emoji / --no-emoji  Prefix summary with venue category as emoji
                                 [default: emoji]
       -o, --output FILENAME     Output file
+      -m, --max-size SIZE       Maximum size of the output file in bytes (accepts
+                                K and M suffixes as well)
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
       --config-sample           Show sample configuration file
@@ -111,6 +113,9 @@ Sample config file can be generated using the `--config-sample` flag:
     
     # Output file
     output: '-'
+    
+    # Maximum size of the output file in bytes (accepts K and M suffixes as well)
+    max_size: SIZE
 <!-- end include -->
 
 ## Donations (♥ = €)

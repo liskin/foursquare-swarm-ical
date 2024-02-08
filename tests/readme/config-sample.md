@@ -16,3 +16,6 @@
     
     # Output file
     output: '-'
+    
+    # Maximum size of the output file in bytes (accepts K and M suffixes as well)
+    max_size: SIZE

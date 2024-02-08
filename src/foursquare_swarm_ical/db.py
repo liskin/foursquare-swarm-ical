@@ -29,7 +29,7 @@ def database(filename: Union[str, PathLike]) -> Iterator[sqlite3.Connection]:
 
 
 def checkins(db: sqlite3.Connection) -> Iterator[Any]:
-    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt"):
+    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt DESC"):
         yield json.loads(checkin['data'])
 
 
