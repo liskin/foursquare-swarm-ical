@@ -126,3 +126,4 @@ By donating, you'll also support the development of my other projects. You
 might like these:
 
 * [strava-offline](https://github.com/liskin/strava-offline) – Keep a local mirror of Strava activities for further analysis/processing
+* [strava-ical](https://github.com/liskin/strava-ical) – Generate iCalendar with your Strava activities
