@@ -35,18 +35,29 @@ pip install foursquare-swarm-ical
 
 [pipx]: https://github.com/pypa/pipx
 
-## Preparation
+## Setup and usage
 
-You'll need to obtain a Foursquare API Access Token. The easiest way to obtain
-one is to use their [API Exporer](https://foursquare.com/developers/explore/).
-Grant it permission for your account, open DevTools, let it execute an API
-call and then inspect the request and copy `oauth_token` from the Query String
-Parameters.
+* Obtain a Foursquare API Access Token. The easiest way to obtain one is to
+  use their [API Exporer](https://foursquare.com/developers/explore/). Grant
+  it permission for your account, open DevTools, let it execute an API call
+  and then inspect the request and copy `oauth_token` from the Query String
+  Parameters.
 
-* Chrome: <https://developers.google.com/web/tools/chrome-devtools/network/reference#query-string>
-* Firefox: <https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor/request_list>
+  * Chrome: <https://developer.chrome.com/docs/devtools/network/reference#payload-encodings>
+  * Firefox: <https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor/request_list>
 
-## Usage
+* Run `foursquare-swarm-ical`:
+
+  ```
+  $ foursquare-swarm-ical --access-token TOKENTOKENTOKEN --max-size 1M -o swarm-checkins.ical
+  ```
+
+* Import `swarm-checkins.ical` into your calendar app of choice.
+
+  (Note that Google Calendar refreshes iCal URLs once a day and cannot be
+  tweaked in any way. Manual refresh isn't possible either.)
+
+## Command line options
 
 <!-- include tests/readme/help.md -->
     $ foursquare-swarm-ical --help
@@ -72,19 +83,6 @@ Parameters.
       --config-sample           Show sample configuration file
       --help                    Show this message and exit.
 <!-- end include -->
-
-Example:
-
-```
-$ foursquare-swarm-ical --access-token TOKENTOKENTOKEN
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:foursquare-swarm-ical
-BEGIN:VEVENT
-SUMMARY:@ Venue
-DTSTART;VALUE=DATE-TIME:20120304T214456Z
-…
-```
 
 ## Configuration file
 
