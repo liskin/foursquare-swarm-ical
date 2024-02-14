@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timezone
 from typing import Any
-from typing import Iterator
+from typing import Iterable
 from typing import Optional
 
 import icalendar  # type: ignore [import]
@@ -9,7 +9,7 @@ import icalendar  # type: ignore [import]
 from .emoji import Emojis
 
 
-def ical(checkins: Iterator[Any], emojis: Optional[Emojis] = None, max_size: Optional[int] = None) -> bytes:
+def ical(checkins: Iterable[Any], emojis: Optional[Emojis] = None, max_size: Optional[int] = None) -> bytes:
     cal = icalendar.Calendar()
     cal.add('prodid', "foursquare-swarm-ical")
     cal.add('version', "2.0")

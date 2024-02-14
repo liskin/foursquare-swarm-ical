@@ -22,7 +22,7 @@ def test_sync():
         db_conn.execute("DELETE FROM checkins ORDER BY createdAt DESC LIMIT 0")
 
         # sync again
-        db.sync(db=db_conn, access_token="TEST")
+        db.sync(db=db_conn, access_token="TEST", incremental=1)
 
         # recheck that we have all the checkins we expect
         checkins = [list(row) for row in db_conn.execute(

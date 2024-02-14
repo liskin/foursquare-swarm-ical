@@ -8,6 +8,8 @@
                                 DEBUG)
       --sync / --no-sync        Sync again or just use local database?  [default:
                                 sync]
+      --full / --no-full        Perform full sync instead of incremental
+                                [default: no-full]
       --access-token TEXT       Foursquare oauth2 access token  [env var:
                                 FOURSQUARE_TOKEN]
       --database PATH           SQLite database file  [default: /home/user/.local/

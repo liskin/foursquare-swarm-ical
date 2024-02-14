@@ -5,6 +5,9 @@
     # Sync again or just use local database?
     sync: true
     
+    # Perform full sync instead of incremental
+    full: false
+    
     # Foursquare oauth2 access token
     access_token: TEXT
     

@@ -44,6 +44,9 @@ class SizeType(click.ParamType):
     '--sync/--no-sync', default=True, show_default=True,
     help="Sync again or just use local database?")
 @click.option(
+    '--full/--no-full', default=False, show_default=True,
+    help="Perform full sync instead of incremental")
+@click.option(
     '--access-token', type=str, envvar='FOURSQUARE_TOKEN', show_envvar=True,
     help="Foursquare oauth2 access token")
 @click.option(
@@ -64,6 +67,7 @@ class SizeType(click.ParamType):
 @config_file.yaml_config_sample_option()
 def cli(
     sync: bool,
+    full: bool,
     access_token: str,
     database: Path,
     emoji: bool,
@@ -76,7 +80,7 @@ def cli(
             if not access_token:
                 raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
 
-            db.sync(db=db_conn, access_token=access_token)
+            db.sync(db=db_conn, access_token=access_token, incremental=(not full))
 
         output.write(ical.ical(
             checkins=db.checkins(db=db_conn),

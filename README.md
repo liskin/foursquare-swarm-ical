@@ -70,6 +70,8 @@ pip install foursquare-swarm-ical
                                 DEBUG)
       --sync / --no-sync        Sync again or just use local database?  [default:
                                 sync]
+      --full / --no-full        Perform full sync instead of incremental
+                                [default: no-full]
       --access-token TEXT       Foursquare oauth2 access token  [env var:
                                 FOURSQUARE_TOKEN]
       --database PATH           SQLite database file  [default: /home/user/.local/
@@ -100,6 +102,9 @@ Sample config file can be generated using the `--config-sample` flag:
     
     # Sync again or just use local database?
     sync: true
+    
+    # Perform full sync instead of incremental
+    full: false
     
     # Foursquare oauth2 access token
     access_token: TEXT
