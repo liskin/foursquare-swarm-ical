@@ -1,3 +1,4 @@
+import logging
 from pathlib import Path
 import re
 from typing import BinaryIO
@@ -29,8 +30,16 @@ class SizeType(click.ParamType):
 
 @click.command(context_settings={'max_content_width': 120})
 @click.option(
-    '-v', '--verbose', count=True,
-    help="Be more verbose")
+    '-v', '--verbose', count=True, expose_value=False,
+    callback=lambda _ctx, _param, value: logging.basicConfig(
+        level=(
+            logging.DEBUG if value >= 2 else
+            logging.INFO if value >= 1 else
+            logging.WARNING),
+        format="%(levelname)s - %(message)s",
+    ),
+    help="Logging verbosity (0 = WARNING, 1 = INFO, 2 = DEBUG)",
+)
 @click.option(
     '--sync/--no-sync', default=True, show_default=True,
     help="Sync again or just use local database?")
@@ -54,7 +63,6 @@ class SizeType(click.ParamType):
 @config_file.yaml_config_option()
 @config_file.yaml_config_sample_option()
 def cli(
-    verbose: bool,
     sync: bool,
     access_token: str,
     database: Path,
@@ -68,7 +76,7 @@ def cli(
             if not access_token:
                 raise RuntimeError("--access-token or FOURSQUARE_TOKEN required")
 
-            db.sync(db=db_conn, access_token=access_token, verbose=verbose)
+            db.sync(db=db_conn, access_token=access_token)
 
         output.write(ical.ical(
             checkins=db.checkins(db=db_conn),

@@ -1,9 +1,9 @@
 from contextlib import contextmanager
 from datetime import datetime
 import json
+import logging
 from os import PathLike
 import sqlite3
-from sys import stderr
 from typing import Any
 from typing import Iterator
 from typing import Union
@@ -38,7 +38,7 @@ def fetch_checkins(access_token: str) -> Iterator[Any]:
     return client.users.all_checkins()
 
 
-def sync(db: sqlite3.Connection, access_token: str, verbose: int) -> None:
+def sync(db: sqlite3.Connection, access_token: str) -> None:
     with db:  # transaction
         for checkin in fetch_checkins(access_token=access_token):
             tup = (checkin['id'], int(checkin['createdAt']), json.dumps(checkin))
@@ -47,5 +47,4 @@ def sync(db: sqlite3.Connection, access_token: str, verbose: int) -> None:
             except sqlite3.IntegrityError:
                 break
 
-            if verbose > 0:
-                print(datetime.fromtimestamp(checkin['createdAt']), file=stderr)
+            logging.debug(f"checkin {checkin['id']} at {datetime.fromtimestamp(checkin['createdAt'])}")

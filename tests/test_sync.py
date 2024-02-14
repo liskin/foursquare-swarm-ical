@@ -7,7 +7,7 @@ from foursquare_swarm_ical import db
 def test_sync():
     with db.database(":memory:") as db_conn:
         # initial sync
-        db.sync(db=db_conn, access_token="TEST", verbose=-1)
+        db.sync(db=db_conn, access_token="TEST")
 
         # check that we have all the checkins we expect
         checkins = [list(row) for row in db_conn.execute(
@@ -22,7 +22,7 @@ def test_sync():
         db_conn.execute("DELETE FROM checkins ORDER BY createdAt DESC LIMIT 0")
 
         # sync again
-        db.sync(db=db_conn, access_token="TEST", verbose=-1)
+        db.sync(db=db_conn, access_token="TEST")
 
         # recheck that we have all the checkins we expect
         checkins = [list(row) for row in db_conn.execute(

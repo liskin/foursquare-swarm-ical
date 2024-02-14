@@ -66,7 +66,8 @@ pip install foursquare-swarm-ical
       Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar
     
     Options:
-      -v, --verbose             Be more verbose
+      -v, --verbose             Logging verbosity (0 = WARNING, 1 = INFO, 2 =
+                                DEBUG)
       --sync / --no-sync        Sync again or just use local database?  [default:
                                 sync]
       --access-token TEXT       Foursquare oauth2 access token  [env var:
@@ -94,7 +95,7 @@ Sample config file can be generated using the `--config-sample` flag:
 
 <!-- include tests/readme/config-sample.md -->
     $ foursquare-swarm-ical --config-sample
-    # Be more verbose
+    # Logging verbosity (0 = WARNING, 1 = INFO, 2 = DEBUG)
     verbose: 0
     
     # Sync again or just use local database?

@@ -1,5 +1,5 @@
     $ foursquare-swarm-ical --config-sample
-    # Be more verbose
+    # Logging verbosity (0 = WARNING, 1 = INFO, 2 = DEBUG)
     verbose: 0
     
     # Sync again or just use local database?
