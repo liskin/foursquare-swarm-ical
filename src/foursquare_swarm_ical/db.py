@@ -74,7 +74,7 @@ def upsert(db: sqlite3.Connection, rows: Iterable[Any], incremental: Union[bool,
 
 def sync(db: sqlite3.Connection, access_token: str, incremental: bool = False) -> None:
     rows = (
-        {'id': checkin['id'], 'createdAt': int(checkin['createdAt']), 'data': json.dumps(checkin)}
+        {'id': checkin['id'], 'createdAt': int(checkin['createdAt']), 'data': json.dumps(checkin, sort_keys=True)}
         for checkin in fetch_checkins(access_token=access_token)
     )
     upsert(db, rows, incremental=incremental)
