@@ -86,5 +86,5 @@ def fetch_checkins(access_token: str) -> Iterator[Any]:
 
 
 def checkins(db: sqlite3.Connection) -> Iterator[Any]:
-    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt DESC"):
+    for checkin in db.execute("SELECT data FROM checkins ORDER BY createdAt DESC, id"):
         yield json.loads(checkin['data'])
