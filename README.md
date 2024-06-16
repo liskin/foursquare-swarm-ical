@@ -85,7 +85,7 @@ pip install foursquare-swarm-ical
                                 r/.config/foursquare_swarm_ical/config.yaml]
       --config-sample           Show sample configuration file
       --help                    Show this message and exit.
-<!-- end include -->
+<!-- end include tests/readme/help.md -->
 
 ## Configuration file
 
@@ -120,9 +120,28 @@ Sample config file can be generated using the `--config-sample` flag:
     
     # Maximum size of the output file in bytes (accepts K and M suffixes as well)
     max_size: SIZE
-<!-- end include -->
+<!-- end include tests/readme/config-sample.md -->
 
-## Donations (♥ = €)
+## Contributing
+
+### Code
+
+We welcome bug fixes, (reasonable) new features, documentation improvements,
+and more. Submit these as GitHub pull requests. Use GitHub issues to report
+bugs and discuss non-trivial code improvements; alternatively, get in touch
+via [IRC/Matrix/Fediverse](https://work.lisk.in/contact/).
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details about the code base
+(including running tests locally).
+
+Note that this project was born out of a desire to solve a problem I was
+facing. While I'm excited to share it with the world, keep in mind that I'll
+be prioritizing features and bug fixes that align with my personal use cases.
+There may be times when I'm busy with other commitments and replies to
+contributions might be delayed, or even occasionally missed. Progress may come
+in bursts. Adjust your expectations accordingly.
+
+### Donations (♥ = €)
 
 If you like this tool and wish to support its development and maintenance,
 please consider [a small donation](https://www.paypal.me/lisknisi/5EUR) or
