@@ -45,7 +45,6 @@ dev = [
     "prysk >= 0.20.0",
     "twine",
     "types-PyYAML",
-    "types-pytz",
 ]
 test = [
     "pytest",
