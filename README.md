@@ -12,27 +12,27 @@ foursquare-swarm-ical is a …
 
 ## Installation
 
+Using [uv][]:
+
+```console
+$ uv tool install foursquare-swarm-ical
+```
+
 Using [pipx][]:
 
-```
-pipx ensurepath
-pipx install foursquare-swarm-ical
-```
-
-To keep a local git clone around:
-
-```
-git clone https://github.com/liskin/foursquare-swarm-ical
-make -C foursquare-swarm-ical pipx
+```console
+$ pipx ensurepath
+$ pipx install foursquare-swarm-ical
 ```
 
-Alternatively, if you don't need the isolated virtualenv that [pipx][]
-provides, feel free to just:
+From a git clone:
 
-```
-pip install foursquare-swarm-ical
+```console
+$ git clone https://github.com/liskin/foursquare-swarm-ical
+$ uv tool install ./foursquare-swarm-ical
 ```
 
+[uv]: https://docs.astral.sh/uv/
 [pipx]: https://github.com/pypa/pipx
 
 ## Usage
