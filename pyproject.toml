@@ -70,6 +70,7 @@ dependencies-apt = [
     "python3-platformdirs",
     "python3-pytest",
     "python3-requests",
+    "python3-rich",
     "python3-typeshed",
     "python3-vcr",
     "python3-venv",
