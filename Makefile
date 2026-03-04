@@ -1,16 +1,13 @@
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
+
 PYTHON = python3
 
 VENV = .venv
 VENV_PYTHON = $(VENV)/bin/python
 VENV_DONE = $(VENV)/.done
-VENV_PIP_INSTALL = '.[dev, test]'
 VENV_SYSTEM_SITE_PACKAGES = $(VENV)/.venv-system-site-packages
 VENV_USE_SYSTEM_SITE_PACKAGES = $(wildcard $(VENV_SYSTEM_SITE_PACKAGES))
-
-VENV_WHEEL = .venv-wheel
-VENV_WHEEL_PYTHON = $(VENV_WHEEL)/bin/python
-
-PACKAGE := $(shell sed -ne '/^name / { y/-/_/; s/^.*=\s*"\(.*\)"/\1/p }' pyproject.toml)
 
 TEMPLATES_DIR = $(HOME)/src
 TEMPLATE = $(eval TEMPLATE := $$(shell realpath --relative-to=. $$(TEMPLATES_DIR)/cookiecutter-python-cli))$(TEMPLATE)
@@ -23,16 +20,6 @@ venv-system-site-packages:
 .PHONY: venv
 ## Setup ./.venv/
 venv: $(VENV_DONE)
-
-.PHONY: pipx
-## Install locally using pipx
-pipx:
-	pipx install --editable .
-
-.PHONY: pipx-site-packages
-## Install locally using pipx (--system-site-packages)
-pipx-site-packages:
-	pipx install --system-site-packages --editable .
 
 .PHONY: check
 ## Invoke all checks (lints, tests, readme)
@@ -84,19 +71,18 @@ readme: $(wildcard *.md)
 	git diff --exit-code $^
 
 .PHONY: $(wildcard *.md)
-$(wildcard *.md): $(VENV_DONE) test-prysk
-	$(VENV_PYTHON) tests/include-preproc.py --comment-start="<!-- " --comment-end=" -->" $@
+$(wildcard *.md) &: $(VENV_DONE) test-prysk
+	$(VENV_PYTHON) tests/include-preproc.py --comment-start="<!-- " --comment-end=" -->" $(wildcard *.md)
 
 .PHONY: dist
-## Build distribution artifacts (tar, wheel)
-dist: $(VENV_DONE)
-	rm -rf dist/
-	$(VENV_PYTHON) -m build --outdir dist
+## Build distribution artifacts (sdist, wheel)
+dist:
+	uv build --clear
 
-.PHONY: twine-upload
-## Release to PyPI
-twine-upload: dist
-	$(VENV_PYTHON) -m twine upload $(wildcard dist/*)
+.PHONY: publish
+## Publish to PyPI
+publish: dist
+	uv publish
 
 .PHONY: ipython
 ## Invoke IPython in venv (not installed by default)
@@ -118,14 +104,17 @@ template-update:
 template-merge: template-update
 	git merge template
 
-.PHONY: check-wheel
-## Check that the wheel we build works in a completely empty venv
+.PHONY: smoke-dist
+## Smoke test the build artifacts in an isolated venv
 ## (i.e. check for unspecified dependencies)
-check-wheel: dist
-	$(PYTHON) -m venv --clear --without-pip $(VENV_WHEEL)
-	cd $(VENV_WHEEL) && $(PYTHON) -m pip --isolated download pip
-	set -- $(VENV_WHEEL)/pip-*-py3-none-any.whl && $(VENV_WHEEL_PYTHON) $$1/pip install dist/$(PACKAGE)-*.whl
-	$(VENV_WHEEL_PYTHON) -m $(PACKAGE) --help
+smoke-dist: dist
+	package=$$(uvx --from yq -- tomlq -e -r '.project.name | gsub("-"; "_")' pyproject.toml); \
+	for dist in dist/"$$package"-*.{whl,tar*}; do \
+		uv run \
+			--isolated --no-project \
+			--with "$$dist" \
+			-- python -m "$$package" --help; \
+	done
 
 define VENV_CREATE
 	$(PYTHON) -m venv $(VENV)
@@ -133,22 +122,14 @@ endef
 
 define VENV_CREATE_SYSTEM_SITE_PACKAGES
 	$(PYTHON) -m venv --system-site-packages --without-pip $(VENV)
-	$(VENV_PYTHON) -m pip --version || $(PYTHON) -m venv --system-site-packages $(VENV)
-	$(VENV_PYTHON) -m pip install 'pip >= 22.3' # PEP-660 (editable without setup.py)
 	touch $(VENV_SYSTEM_SITE_PACKAGES)
 endef
 
-# workaround for https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1003252 and/or https://github.com/pypa/pip/issues/6264
-ifneq ($(VENV_USE_SYSTEM_SITE_PACKAGES),)
-ifneq ($(shell test -f /etc/debian_version && python3 -c 'import sys; exit(not(sys.version_info < (3, 10)))' && echo x),)
-$(warning XXX: using SETUPTOOLS_USE_DISTUTILS=stdlib workaround)
-$(VENV_DONE): export SETUPTOOLS_USE_DISTUTILS := stdlib
-endif
-endif
-
 $(VENV_DONE): $(MAKEFILE_LIST) pyproject.toml
 	$(if $(VENV_USE_SYSTEM_SITE_PACKAGES),$(VENV_CREATE_SYSTEM_SITE_PACKAGES),$(VENV_CREATE))
-	$(VENV_PYTHON) -m pip install -e $(VENV_PIP_INSTALL)
+	$(VENV_PYTHON) -m pip install 'pip >= 25.1' # PEP-735 (dependency groups)
+	extras=$$(uvx --from yq -- tomlq -e -r '.project."optional-dependencies" // [] | keys | join(",")' pyproject.toml); \
+	$(VENV_PYTHON) -m pip install --group dev -e ".[ $$extras ]"
 	touch $@
 
 include _help.mk
