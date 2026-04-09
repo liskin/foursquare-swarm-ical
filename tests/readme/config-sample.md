@@ -1,3 +1,7 @@
+<!--
+    $ . "$TESTDIR"/../.xdg-user.sh
+-->
+
     $ foursquare-swarm-ical --config-sample
     # Logging verbosity (0 = WARNING, 1 = INFO, 2 = DEBUG)
     verbose: 0

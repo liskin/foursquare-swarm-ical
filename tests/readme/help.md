@@ -1,3 +1,7 @@
+<!--
+    $ . "$TESTDIR"/../.xdg-user.sh
+-->
+
     $ foursquare-swarm-ical --help
     Usage: foursquare-swarm-ical [OPTIONS]
     
