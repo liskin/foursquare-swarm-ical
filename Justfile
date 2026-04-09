@@ -29,6 +29,10 @@ clean:
 ipython:
     uv run {{ uv_run_sync_flags }} --with ipython python -m IPython
 
+# watchexec -I -- just …
+watch *params:
+    watchexec -I -- just {{ params }}
+
 # ----------------------------------------------------------------------
 
 lint_sources := 'src/ tests/'
