@@ -63,6 +63,9 @@ class SizeType(click.ParamType):
 @click.option(
     '-m', '--max-size', type=SizeType(),
     help="Maximum size of the output file in bytes (accepts K and M suffixes as well)")
+@click.option(
+    '--skip-errors', default=False, show_default=True,
+    help="Skip check-ins on error and log them.")
 @config_file.yaml_config_option()
 @config_file.yaml_config_sample_option()
 def cli(
@@ -72,7 +75,8 @@ def cli(
     database: Path,
     emoji: bool,
     output: BinaryIO,
-    max_size: Optional[int]
+    max_size: Optional[int],
+    skip_errors: bool,
 ) -> None:
     """Sync Foursquare Swarm check-ins to local sqlite DB and generate iCalendar"""
     with db.database(database) as db_conn:
@@ -85,5 +89,6 @@ def cli(
         output.write(ical.ical(
             checkins=db.checkins(db=db_conn),
             emojis=(Emojis() if emoji else None),
-            max_size=max_size
+            max_size=max_size,
+            skip_errors=skip_errors,
         ))

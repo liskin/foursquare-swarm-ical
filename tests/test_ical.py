@@ -1,5 +1,8 @@
+import logging
 import re
 import textwrap
+
+import pytest
 
 from foursquare_swarm_ical.emoji import Emojis
 from foursquare_swarm_ical.ical import ical
@@ -169,6 +172,14 @@ checkins = [
     },
 ]
 
+bad_checkins = [
+    {
+        "id": "bad_checkin",
+        "createdAt": 0,
+        "type": "checkin",
+    },
+]
+
 
 def test_ical():
     expected = textwrap.dedent(
@@ -217,3 +228,18 @@ def test_ical_max_size():
     assert empty_size < full_size
     assert len(ical(checkins, max_size=full_size)) == full_size
     assert empty_size < len(ical(checkins, max_size=full_size - 1)) < full_size
+
+
+def test_ical_skip_errors_false():
+    with pytest.raises(KeyError):
+        ical(bad_checkins + checkins, skip_errors=False)
+
+
+def test_ical_skip_errors(caplog):
+    result = ical(bad_checkins + checkins, skip_errors=True).decode("utf-8")
+    assert "Pivnice Pegas" in result
+    assert "bad_checkin" not in result
+    assert caplog.record_tuples == [
+        ('root', logging.WARNING,
+         "Failed to process checkin:\ncheckin={'id': 'bad_checkin', 'createdAt': 0, 'type': 'checkin'}")
+    ]

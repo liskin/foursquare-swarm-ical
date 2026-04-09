@@ -85,6 +85,8 @@ $ uv tool install ./foursquare-swarm-ical
       -o, --output FILENAME     Output file
       -m, --max-size SIZE       Maximum size of the output file in bytes (accepts
                                 K and M suffixes as well)
+      --skip-errors BOOLEAN     Skip check-ins on error and log them.  [default:
+                                False]
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
       --config-sample           Show sample configuration file
@@ -128,6 +130,9 @@ Sample config file can be generated using the `--config-sample` flag:
     
     # Maximum size of the output file in bytes (accepts K and M suffixes as well)
     max_size: SIZE
+    
+    # Skip check-ins on error and log them.
+    skip_errors: false
 <!-- end include tests/readme/config-sample.md -->
 
 ## Contributing

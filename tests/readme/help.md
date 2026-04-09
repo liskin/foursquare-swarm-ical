@@ -23,6 +23,8 @@
       -o, --output FILENAME     Output file
       -m, --max-size SIZE       Maximum size of the output file in bytes (accepts
                                 K and M suffixes as well)
+      --skip-errors BOOLEAN     Skip check-ins on error and log them.  [default:
+                                False]
       --config FILE             Read configuration from FILE.  [default: /home/use
                                 r/.config/foursquare_swarm_ical/config.yaml]
       --config-sample           Show sample configuration file

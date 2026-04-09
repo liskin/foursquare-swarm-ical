@@ -26,3 +26,6 @@
     
     # Maximum size of the output file in bytes (accepts K and M suffixes as well)
     max_size: SIZE
+    
+    # Skip check-ins on error and log them.
+    skip_errors: false
