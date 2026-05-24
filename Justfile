@@ -21,9 +21,9 @@ run *params:
 # Run all checks (`lint`, `test`, `readme-diff`)
 check: lint test readme-diff
 
-# Clean all gitignored files/directories
+# Clean all (locally) gitignored files/directories
 clean:
-    git clean -ffdX
+    git -c core.excludesFile= clean -ffdX
 
 # Invoke IPython with the project and its dependencies available
 ipython:
